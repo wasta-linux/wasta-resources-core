@@ -1,0 +1,18 @@
+HTTrack3.48-1+libhtsjava.so.2 launched on Wed, 21 Jan 2015 10:18:23 at https://sites.google.com/site/wastalinux/ +*.css
+(httrack https://sites.google.com/site/wastalinux/ +*.css -O ./.wasta-linux-website/ )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:18:43	Error: 	"Not Found" (404) at link https://sites.google.com/site/wastalinux/CSI/ (from https://sites.google.com/site/wastalinux/)
+10:19:12	Warning: 	Link https://sites.google.com/site/wastalinux/system/app/pages/reportAbuse not scanned (follow robots meta tag)
+10:19:12	Error: 	"Bad Request" (400) at link https://sites.google.com/site/wastalinux/_/tz (from https://sites.google.com/site/wastalinux/)
+10:19:12	Error: 	"Not Found" (404) at link https://sites.google.com/site/wastalinux/home/CSI/ (from https://sites.google.com/site/wastalinux/home/download)
+10:19:30	Error: 	"Not Found" (404) at link https://sites.google.com/site/wastalinux/wasta-applications/CSI/ (from https://sites.google.com/site/wastalinux/wasta-applications/wasta-backup)
+10:19:30	Error: 	"Not Found" (404) at link https://sites.google.com/site/wastalinux/home/customizing/CSI/ (from https://sites.google.com/site/wastalinux/home/customizing/remastersys-iso)
+10:19:31	Warning: 	Warning, link #60 empty
+
+HTTrack Website Copier/3.48-1 mirror complete in 1 minutes 8 seconds : 59 links scanned, 53 files written (1553511 bytes overall), 54 files updated [1358809 bytes received at 19982 bytes/sec], 475835 bytes transferred using HTTP compression in 38 files, ratio 33%
+(5 errors, 2 warnings, 0 messages)

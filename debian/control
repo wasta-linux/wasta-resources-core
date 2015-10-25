@@ -1,0 +1,12 @@
+Source: wasta-resources-core
+Section: doc
+Priority: extra
+Maintainer: Rik Shaw <rikshaw76@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.5
+
+Package: wasta-resources-core
+Architecture: all
+Depends: wasta-resources, ${shlibs:Depends}, ${misc:Depends}
+Description: Wasta-Linux Core Resources
+ Wasta-Linux core documentation and reference materials.

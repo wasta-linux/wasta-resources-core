@@ -1,0 +1,17 @@
+wasta-resources-core (1.0) trusty; urgency=medium
+
+  * removing nemo dependency (dependency handled by wasta-resources)
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Sun, 25 Oct 2015 21:51:06 +0300
+
+wasta-resources-core (0.1.1) trusty; urgency=medium
+
+  * updated .wasta-linux-website to current
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Wed, 21 Jan 2015 10:20:26 +0300
+
+wasta-resources-core (0.1.0) trusty; urgency=medium
+
+  * initial release
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Sat, 20 Dec 2014 21:07:54 +0300
