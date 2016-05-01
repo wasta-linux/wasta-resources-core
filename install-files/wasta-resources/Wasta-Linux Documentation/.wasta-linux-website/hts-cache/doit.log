@@ -1,5 +1,5 @@
-https://sites.google.com/site/wastalinux/ +*.css -O ./.wasta-linux-website/
-File generated automatically on Wed, 21 Jan 2015 10:18:23, do NOT edit
+-iC2 https://sites.google.com/site/wastalinux/ +*.css -O /home/akiverson/wasta-linux-doc
+File generated automatically on Sun, 01 May 2016 16:58:14, do NOT edit
 
 To update a mirror, just launch httrack without any parameters
 The existing cache will be used (and modified)
