@@ -1,3 +1,9 @@
+wasta-resources-core (2.0.0) xenial; urgency=medium
+
+  * initial xenial release - new download of wasta-linux website
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Sun, 01 May 2016 17:06:47 +0300
+
 wasta-resources-core (1.0) trusty; urgency=medium
 
   * removing nemo dependency (dependency handled by wasta-resources)
