@@ -1,3 +1,9 @@
+wasta-resources-core (2.0.1) xenial; urgency=medium
+
+  * sync with website: newer documentation for wasta-remastersys, etc.
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Wed, 08 Mar 2017 15:21:44 +0300
+
 wasta-resources-core (2.0.0) xenial; urgency=medium
 
   * initial xenial release - new download of wasta-linux website
