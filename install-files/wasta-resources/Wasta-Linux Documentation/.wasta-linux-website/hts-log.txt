@@ -1,17 +1,14 @@
-HTTrack3.48-21 launched on Sun, 01 May 2016 16:58:14 at https://sites.google.com/site/wastalinux/ +*.css
-(httrack -iC2 https://sites.google.com/site/wastalinux/ +*.css -O /home/akiverson/wasta-linux-doc )
+HTTrack3.48-21 launched on Wed, 08 Mar 2017 15:13:51 at https://sites.google.com/site/wastalinux/ +*.css
+(httrack https://sites.google.com/site/wastalinux/ +*.css -O .wasta-linux-website )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-16:58:17	Error: 	"Not Found" (404) at link https://sites.google.com/site/wastalinux/CSI/ (from https://sites.google.com/site/wastalinux/)
-17:00:05	Warning: 	Link https://sites.google.com/site/wastalinux/system/app/pages/reportAbuse not scanned (follow robots meta tag)
-17:00:06	Error: 	"Bad Request" (400) at link https://sites.google.com/site/wastalinux/_/tz (from https://sites.google.com/site/wastalinux/)
-17:00:08	Error: 	"Not Found" (404) at link https://sites.google.com/site/wastalinux/home/CSI/ (from https://sites.google.com/site/wastalinux/home/ubuntuconversion)
-17:00:22	Error: 	"Not Found" (404) at link https://sites.google.com/site/wastalinux/wasta-applications/CSI/ (from https://sites.google.com/site/wastalinux/wasta-applications/wasta-backup)
-17:00:24	Error: 	"Not Found" (404) at link https://sites.google.com/site/wastalinux/home/customizing/CSI/ (from https://sites.google.com/site/wastalinux/home/customizing/remastersys-iso)
+15:14:41	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://sites.google.com/site/wastalinux/_/rsrc/1472855323733/home/wasta-linux-round-128.png (from https://sites.google.com/site/wastalinux/)
+15:14:42	Warning: 	Link https://sites.google.com/site/wastalinux/system/app/pages/reportAbuse not scanned (follow robots meta tag)
+15:14:42	Error: 	"Bad Request" (400) at link https://sites.google.com/site/wastalinux/_/tz (from https://sites.google.com/site/wastalinux/)
 
-HTTrack Website Copier/3.48-21 mirror complete in 2 minutes 18 seconds : 70 links scanned, 64 files written (2336754 bytes overall), 43 files updated [1724602 bytes received at 12497 bytes/sec], 88484 bytes transferred using HTTP compression in 31 files, ratio 39%
-(5 errors, 1 warnings, 0 messages)
+HTTrack Website Copier/3.48-21 mirror complete in 1 minutes 22 seconds : 65 links scanned, 62 files written (2168589 bytes overall), 63 files updated [1925193 bytes received at 23477 bytes/sec], 458782 bytes transferred using HTTP compression in 43 files, ratio 33%
+(1 errors, 2 warnings, 0 messages)
