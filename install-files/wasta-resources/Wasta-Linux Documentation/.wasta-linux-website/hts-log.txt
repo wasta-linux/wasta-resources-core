@@ -1,14 +1,17 @@
-HTTrack3.48-21 launched on Wed, 08 Mar 2017 15:13:51 at https://sites.google.com/site/wastalinux/ +*.css
-(httrack https://sites.google.com/site/wastalinux/ +*.css -O .wasta-linux-website )
+HTTrack3.49-2 launched on Wed, 05 Sep 2018 09:31:37 at https://sites.google.com/site/wastalinux/ +*.css
+(httrack https://sites.google.com/site/wastalinux/ +*.css -O ./.wasta-linux-website )
 
 Information, Warnings and Errors reported for this mirror:
 note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-15:14:41	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://sites.google.com/site/wastalinux/_/rsrc/1472855323733/home/wasta-linux-round-128.png (from https://sites.google.com/site/wastalinux/)
-15:14:42	Warning: 	Link https://sites.google.com/site/wastalinux/system/app/pages/reportAbuse not scanned (follow robots meta tag)
-15:14:42	Error: 	"Bad Request" (400) at link https://sites.google.com/site/wastalinux/_/tz (from https://sites.google.com/site/wastalinux/)
+09:33:58	Warning: 	Link https://sites.google.com/site/wastalinux/system/app/pages/reportAbuse not scanned (follow robots meta tag)
+09:33:59	Error: 	"Bad Request" (400) at link https://sites.google.com/site/wastalinux/_/tz (from https://sites.google.com/site/wastalinux/)
+09:34:40	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://sites.google.com/site/wastalinux/home/wasta-linux-round-128.png?attredirects=0 (from https://sites.google.com/site/wastalinux/wasta-applications/wasta-layout)
+09:42:47	Warning: 	Moved Temporarily for https://sites.google.com/site/wastalinux/home/wasta-linux-round-128.png?attredirects=0
+09:42:47	Warning: 	File has moved from https://sites.google.com/site/wastalinux/home/wasta-linux-round-128.png?attredirects=0 to https://4e56b03a-a-62cb3a1a-s-sites.googlegroups.com/site/wastalinux/home/wasta-linux-round-128.png?attachauth=ANoY7cr2is_xGw3R4rZ4Njzs9xK0PVQpkVEs3Zwc89Nk-pqax8sSBlti62ccURIxgpYHfsxvaN1XbLgYVp7AAehZ2ZTk3Zhip6mQaMIAT7qkqSbn84xTD7yRJW5vwj85CAreRMO_MjSKCrxkPhvvNksA_DVR_mIffmhwykLzgdHqhvpYLTv7CtDxwGwqwaBxjaj0M8I-G0nIS01lJ1d81dY3aRLrgAYHycRElHEo-YnwYQLj4EU8MTg%3D&attredirects=0
+09:42:47	Error: 	"Not Found" (404) at link https://sites.google.com/site/wastalinux/tutorials/The+Language+Worker (from https://sites.google.com/site/wastalinux/tutorials/advisor)
 
-HTTrack Website Copier/3.48-21 mirror complete in 1 minutes 22 seconds : 65 links scanned, 62 files written (2168589 bytes overall), 63 files updated [1925193 bytes received at 23477 bytes/sec], 458782 bytes transferred using HTTP compression in 43 files, ratio 33%
-(1 errors, 2 warnings, 0 messages)
+HTTrack Website Copier/3.49-2 mirror complete in 11 minutes 16 seconds : 250 links scanned, 245 files written (13214827 bytes overall), 242 files updated [12143822 bytes received at 17964 bytes/sec], 1743460 bytes transferred using HTTP compression in 222 files, ratio 27%
+(2 errors, 4 warnings, 0 messages)

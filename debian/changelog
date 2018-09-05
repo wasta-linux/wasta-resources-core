@@ -1,3 +1,9 @@
+wasta-resources-core (2.1.0) bionic; urgency=medium
+
+  * sync with website for bionic release
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Wed, 05 Sep 2018 09:43:13 +0300
+
 wasta-resources-core (2.0.1) xenial; urgency=medium
 
   * sync with website: newer documentation for wasta-remastersys, etc.

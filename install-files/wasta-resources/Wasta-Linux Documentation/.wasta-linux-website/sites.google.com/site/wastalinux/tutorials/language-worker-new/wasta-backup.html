@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+<!-- Mirrored from sites.google.com/site/wastalinux/tutorials/language-worker-new/wasta-backup by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Sep 2018 06:42:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { (function(){function e(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(h){}};this.tick("start",null,a)}var a;if(window.performance)var d=(a=window.performance.timing)&&a.responseStart;var f=0<d?new e(d):new e;window.jstiming={Timer:e,load:f};if(a){var c=a.navigationStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick("_wtsrt",void 0,c),b.tick("wtsrt_","_wtsrt",
+d),b.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick("_tbnd",void 0,window.chrome.csi().startE),b.tick("tbnd_","_tbnd",c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick("_tbnd",void 0,window.external.startE),b.tick("tbnd_","_tbnd",c))),a&&(window.jstiming.pt=a)}catch(g){}})(); })()
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="http://www.google.com/images/icons/product/sites-16.ico" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/470f76/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { function d(a){return document.getElementById(a)}window.byId=d;function g(a){return a.replace(/^\s+|\s+$/g,"")}window.trim=g;var h=[],k=0;window.JOT_addListener=function(a,b,c){var f=new String(k++);a={eventName:a,handler:b,compId:c,key:f};h.push(a);return f};window.JOT_removeListenerByKey=function(a){for(var b=0;b<h.length;b++)if(h[b].key==a){h.splice(b,1);break}};window.JOT_removeAllListenersForName=function(a){for(var b=0;b<h.length;b++)h[b].eventName==a&&h.splice(b,1)};
+window.JOT_postEvent=function(a,b,c){var f={eventName:a,eventSrc:b||{},payload:c||{}};if(window.JOT_fullyLoaded)for(b=h.length,c=0;c<b&&c<h.length;c++){var e=h[c];e&&e.eventName==a&&(f.listenerCompId=e.compId||"",(e="function"==typeof e.handler?e.handler:window[e.handler])&&e(f))}else window.JOT_delayedEvents.push({eventName:a,eventSrc:b,payload:c})};window.JOT_delayedEvents=[];window.JOT_fullyLoaded=!1;
+window.JOT_formatRelativeToNow=function(a,b){a=((new Date).getTime()-a)/6E4;if(1440<=a||0>a)return null;var c=0;60<=a&&(a/=60,c=2);2<=a&&c++;return b?window.JOT_siteRelTimeStrs[c].replace("__duration__",Math.floor(a)):window.JOT_userRelTimeStrs[c].replace("__duration__",Math.floor(a))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/site/wastalinux/tutorials","deleted":false,"title":"Tutorials","dir":"ltr"},{"path":"/site/wastalinux/tutorials/language-worker-new","deleted":false,"title":"language-worker-new","dir":"ltr"},{"path":"/site/wastalinux/tutorials/language-worker-new/wasta-backup","deleted":false,"title":"wasta-backup","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/470f76/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"gvizGstaticVersion":"current","enableAnalytics":true,"pageSharingId":"jotspot_page","codeembeds":{"outerIframeSrc":"https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html","innerIframeSrc":"https://270376064-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html"},"enableUniversalAnalytics":false,"sharingPolicy":"OPENED","siteTitle":"Wasta-Linux","jot2atari":{"eligibility":"ineligible"},"onepickUrl":"https://docs.google.com/picker","adsensePublisherId":null,"features":{"oAuthForChartsApi":true,"moreMobileStyleImprovements":null,"googleChartsOverGstatic":false,"picasaAlbumInsert":false,"pageDrafts":false,"enableJot2Atari":true,"plusBadge":false,"pdfEmbedSupport":false},"isPublic":true,"newSitesBaseUrl":"https://sites.google.com","isConsumer":true,"serverFlags":{"jot2AtariLearnMoreUrl":"https://support.google.com/sites/answer/7035197"},"domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://accounts.google.com/AccountChooser?continue\u003dhttps://sites.google.com/site/wastalinux/tutorials/language-worker-new/wasta-backup\u0026service\u003djotspot","analyticsAccountId":"UA-57283316-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/470f76/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/470f76/system/js/codemirror.js","../../../../../ssl.gstatic.com/sites/p/470f76/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/470f76/system/js/trog_edit__en.js","../../../../../ssl.gstatic.com/sites/p/470f76/system/app/css/trogedit.css","../../_/rsrc/1535010250000/system/app/css/editor.css","../../../../../ssl.gstatic.com/sites/p/470f76/system/app/css/codeeditor.css","/site/wastalinux/_/rsrc/1535010250000/system/app/css/camelot/editor-jfk.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"defaultdomain","baseUri":"/site/wastalinux","name":"wastalinux","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/tutorials/language-worker-new","parentWuid":"wuid:gx:267566599395092a","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"wasta-backup","locale":"en","wuid":"wuid:gx:27077c2bead94d75","revision":3,"path":"/tutorials/language-worker-new/wasta-backup","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"wasta-backup","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/tutorials/language-worker-new","title":"language-worker-new"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","onePickToken":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/site/wastalinux/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="wasta-backup - Wasta-Linux" />
+<meta itemprop="name" content="wasta-backup - Wasta-Linux" />
+<meta property="og:title" content="wasta-backup - Wasta-Linux" />
+<style type="text/css">
+      
+      @font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCu6KVjbNBYlgoKej70l0w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCp6KVjbNBYlgoKejZPslyPN4Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v12/4iCv6KVjbNBYlgoCxCvjsGyI.ttf) format('truetype');
+}
+
+    
+    </style>
+<link rel="stylesheet" type="text/css" href="../../../../../ssl.gstatic.com/sites/p/470f76/system/app/themes/ski/standard-css-ski-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1535010250000/system/app/css/overlayf742.css?cb=ski28a1100px%25150goog-ws-leftnone30middlestandard" />
+<link rel="stylesheet" type="text/css" href="../../_/rsrc/1535010250000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/site/wastalinux/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>wasta-backup - Wasta-Linux</title>
+<meta itemprop="image" content="https://sites.google.com/site/wastalinux/_/rsrc/1472855340087/tutorials/language-worker/Usb%20Mem%20Stick%20600.jpg" />
+<meta property="og:image" content="https://sites.google.com/site/wastalinux/_/rsrc/1472855340087/tutorials/language-worker/Usb%20Mem%20Stick%20600.jpg" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="sites-chrome-header-valign-middle"><div class="sites-header-cell-buffer-wrapper"><h2><a href="../../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../../_/rsrc/1472855319625/config/customLogoc7fe.png?revision=1" alt="Wasta-Linux" class="sites-logo sites-chrome-header-valign-middle " /></a></h2></div></td><td class="sites-layout-searchbox sites-chrome-header-valign-middle "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://sites.google.com/site/wastalinux/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList" class="has-expander"><li class="topLevel nav-first parent " wuid="gx:5c29ff933c41fbfe"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="../../home.html" jotId="wuid:gx:5c29ff933c41fbfe" class="sites-navigation-link topLevel">Wasta-Linux: Home</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../../home/about.html" jotId="wuid:gx:71522e8541452fe5" class="sites-navigation-link">About</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../../home/download.html" jotId="wuid:gx:549d67ee20952ffa" class="sites-navigation-link">Download</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../../home/ubuntumigration.html" jotId="wuid:gx:65f51a580d56dc6" class="sites-navigation-link">Migrating from Ubuntu</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../../home/customizing.html" jotId="wuid:gx:751e25f3d172e20" class="sites-navigation-link">Re-Customizing</a></div></li></ul></li><li class="topLevel parent " wuid="gx:24b1bdd402502d53"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="../../wasta-applications.html" jotId="wuid:gx:24b1bdd402502d53" class="sites-navigation-link topLevel">Wasta Apps</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../../wasta-applications/wasta-backup.html" jotId="wuid:gx:38f09e8b061b64d" class="sites-navigation-link">Wasta-Backup</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../../wasta-applications/wasta-offline.html" jotId="wuid:gx:3dd3bbb14f14ff0a" class="sites-navigation-link">Wasta-Offline</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../../wasta-applications/wasta-layout.html" jotId="wuid:gx:17b5d37798ea9824" class="sites-navigation-link">Wasta-Layout</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../../wasta-applications/wasta-menus.html" jotId="wuid:gx:aa38d75feb70c46" class="sites-navigation-link">Wasta-Menus</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../../wasta-applications/wasta-resources.html" jotId="wuid:gx:350ef514c70612e1" class="sites-navigation-link">Wasta-Resources</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="../../tutorials.html" jotId="wuid:gx:3e89cbcba3ba0c3d" class="sites-navigation-link topLevel">Tutorials</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="../../why-linux.html" jotId="wuid:gx:378c2fd001c7cb76" class="sites-navigation-link topLevel">Why Linux?</a></div></li></ul></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="display: none;">
+<A href="../../tutorials.html" dir="ltr">Tutorials</A>‎ &gt; ‎<A href="../language-worker-new.html" dir="ltr">language-worker-new</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="display: none;" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">wasta-backup</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div><div class="sites-embed-align-right-wrapping-on"><div class="sites-embed-border-off sites-embed" style="width:300px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-5"><p>Contents</p><ol class="goog-toc"><li class="goog-toc"><a href="#Simple_Automatic_Backups"><strong>1 </strong>Simple Automatic Backups</a><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Restore-of-Lost-Data-files"><strong>1.1 </strong>Restore of Lost Data files</a></li></ol></li></ol></div></div></div></div></div>
+<h1><a name="Simple_Automatic_Backups">Simple Automatic Backups</a>
+</h1>
+<p>The language data for your software in use, for example, the Paratext
+ files for Scripture, all live in Wasta in a "normal" or standard place 
+on your hard disk in the computer.  If we leave everything alone, then 
+you do not really need to know where these files actually live...  your 
+advisor needs to know this...  but you can pretty much forget about this
+ concern.</p>
+<div style="display:block;text-align:left"><a href="https://4e56b03a-a-62cb3a1a-s-sites.googlegroups.com/site/wastalinux/tutorials/language-worker/Usb%20Mem%20Stick%20600.jpg?attachauth=ANoY7cqjQYCVhzlVv_HV0nr9SIr9VNYrgd0CH57FAQ3bxpbSJaub1uIFTZfM27tVuEGwlIZPGqwl3DllzdleyrSCFWBiJsMMJwzZ3Vj5p3vcF2hGhctjg-YIIhXB3pdEYrMzcBzsyeSU1e23MYM2ckSKp-pCNN78odbQh7n3OocDzP7IaK5OkNhECp4QD14Py0z8QP43U8kHxDVPId5fA7Dz-SGd75v0b0erpTCy6IAk5kgIKkySYhp--EdUrPyYtc2x3A22ycYY&amp;attredirects=0" imageanchor="1"><img border="0" src="../../_/rsrc/1472855340087/tutorials/language-worker/Usb%20Mem%20Stick%20600.jpg" /></a></div>
+<p style="color:rgb(0,0,0);font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:18px;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255)">However, due to fire or theft, or computer break-down possibilities, it is still nice to get the language data copied onto some other media for safe keeping.  The preferred way to do this is by a simple insertion of a USB memory stick into the USB hole in the side of your computer.  Your advisor should have already shown you how to do this, but these pictures might help you to remember./p&gt;
+
+</p><p>Once the memory stick is inserted into the notebook, then this dialog box will pop up on your screen. </p>
+<a href="https://4e56b03a-a-62cb3a1a-s-sites.googlegroups.com/site/wastalinux/tutorials/language-worker/Wasta%20Backup1%20Circle.png?attachauth=ANoY7cpYzay-SL2__RXitziqt-gMpEpw32XvSRAlyd_FveePsZb3lWfzCgzIl5u6wpFD3slnhhsIjCy5BAWu5rR7-DP9Q2qfVg8p6vzu6mryUtbXHDt71dVN-VtJSZmc2HEBczkiDA-TiY4JspNfe7-1Dx0yXq0W2fs6x44YtBdIRxQ8M2RyQbwErAoOAb3tFM9egdx2sEuICZkLLyNaZSExC63DmOzLq8HuQG3woLo5PKLb4Kb4BHqEIpERxQ20tIhP1SJDFyhW&amp;attredirects=0" imageanchor="1"><img border="0" src="../../_/rsrc/1472855338661/tutorials/language-worker/Wasta%20Backup1%20Circle.png" style="width:100%" /></a>
+<p>All you really have to do here is click the button "Backup" in the centre of this graphical box.  Such boxes are called "dialog boxes" since the computer and its software are trying to talk to you, and give you instructions in a "dialog" of some sort. </p>
+<a href="https://4e56b03a-a-62cb3a1a-s-sites.googlegroups.com/site/wastalinux/tutorials/language-worker/Wasta%20Backup2%20Circle.png?attachauth=ANoY7crLYqCd4dLOWsGmF4jkAgJi7-MALT-SA3jxjyz1LMx5eYGs3b1AVV6UytfuskISX_4i9benp4wfd2IzxTd9zyMelModTluk0ik_DjIUhA8k93Hh2_kmVuajyZ0LncAzD5J8joeT-KDfpO3hfOSWouJCu-Y9hFckfHUy3Jhwh_vffdvlD2mvXIixiaPkcyqCd4MMJ-EEAnVre71W6qB5V00rxRlphdn_mDXzV6Lq3btwZiup66HyBlm3wxpoPIsKCsPGz8P4&amp;attredirects=0" imageanchor="1"><img border="0" src="../../_/rsrc/1472855338888/tutorials/language-worker/Wasta%20Backup2%20Circle.png" style="width:100%" /></a>
+<p>After a minute or so, the Backup dialog box should look like this.  Note the "Backup Complete" message at the bottom of the box.</p>
+<p>That's it!  You have copied all your important data files, whether they be Paratext files, or Bloom literacy materials, or documents that you wrote to Parliament in Libre Office Word, or important email files (if you use the Thunderbird email program), or any spread sheets, or presentations.... it all got backed up onto the portable memory stick.  You might want to have two memory sticks in case one gets lost or destroyed.  You might have a third one that you send to your advisor from time to time in the mail, or by airplane.</p>
+<a href="https://4e56b03a-a-62cb3a1a-s-sites.googlegroups.com/site/wastalinux/tutorials/language-worker/Wasta%20Backup3%20Arrow.png?attachauth=ANoY7cp1HChdx3z7HwqW6x796SjfVhAoT8Fb-yCZwQ-KBqvB3Xg0rD0__eQ0z1wetjFty_SxE4m8Rog6jPW6FKtYyerJBZvorpRESxkEwC2TK2kNCr_h9xAcViu3qZy1l4vezZSESHuurk9obdNabh3tp4hWp41dn6Z1XfgWhBblTTh444nAJNmjh7Twj_CzMRS9NF92mWm1WnWfLDXMOOGhz0cMHv19FXiH8_L0CikYu3zX31yJ7cSLn9uf73jAQnB_K3POCYYy&amp;attredirects=0" imageanchor="1"><img border="0" src="../../_/rsrc/1472855340278/tutorials/language-worker/Wasta%20Backup3%20Arrow.png" style="width:100%" /></a>
+<p>To close the Wasta-backup dialog, click the upper right hand corner "x" in the box, in the same manner as any other program you will encounter under Wasta</p>
+<p>Note that Paratext users have other methods of backing up their data, including on-line repositories if they have a Digicel or wireless modem to the telecom network.  But mobile towers can go down for weeks, and smart-phones uses a modems can be stolen.  It's always a good idea with language data to have other methods of backing up.  Please backup regularly to a mem stick, at least once a day.  Also, this is really the only way to preserve or backup a letter that you may have written with Libre Office Writer.</p>
+<h3><a name="TOC-Restore-of-Lost-Data-files"></a>Restore of Lost Data files</h3>
+<p>Normally there is no reason to restore lost data, but strange things do happen to computers from time to time.</p>
+<p>Restoration of language data is a rather advanced topic for the Language Worker and is normally a task reserved for your "Language Consultant" or advisor that is helping you with your language programme.  It is mentioned here for completeness, but if you have recognized that somehow, presently, the language data files are in error or corrupted, then it would be a good idea for you to be personally trained.  To find and restore the data back from the days when the data was correct can be complicated and basically one needs to search back in time to the place before the error or corruption occurred.</p>
+<p><span style="font-family:arial,sans-serif">Wasta does "remember" your data and keeps a running history as you progress in your work.  So, if a bad day occurred way back three weeks ago, and <b>IF</b> you have been doing daily backups onto a memory stick (as you have been told to do), then it can be very easy to go back in time and restore the lost data to its former glory.</span></p></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="../../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com/site">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/470f76/system/js/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[{"action":"/site/wastalinux/system/app/pages/search","id":"search-site","label":"Search this site"}]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/site/wastalinux/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("2bd", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
+    gsites.Xhr.send('../../_/tz.html', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<script type="text/javascript">
+          sites.codeembed.init();
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+
+<!-- Mirrored from sites.google.com/site/wastalinux/tutorials/language-worker-new/wasta-backup by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Sep 2018 06:42:53 GMT -->
+</html>
