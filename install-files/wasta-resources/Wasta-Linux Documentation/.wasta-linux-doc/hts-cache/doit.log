@@ -1,5 +1,5 @@
 https://www.wastalinux.org/ -*/downloads/* -O ./wasta-linux-doc/
-File generated automatically on Mon, 02 Mar 2020 13:43:19, do NOT edit
+File generated automatically on Mon, 02 Mar 2020 15:15:17, do NOT edit
 
 To update a mirror, just launch httrack without any parameters
 The existing cache will be used (and modified)
