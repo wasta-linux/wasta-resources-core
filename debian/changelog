@@ -1,3 +1,9 @@
+wasta-resources-core (2.2.1) bionic; urgency=medium
+
+  * minor updates to new hugo website
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Mon, 02 Mar 2020 13:51:55 +0300
+
 wasta-resources-core (2.2.0) bionic; urgency=medium
 
   * rebased on new hugo website www.wastalinux.org
