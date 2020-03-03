@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.wastalinux.org/wasta-apps/wasta-backup/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Mar 2020 12:15:32 GMT -->
+<!-- Mirrored from www.wastalinux.org/wasta-apps/wasta-backup/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Mar 2020 06:33:41 GMT -->
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="../../book.min.17ae4652bd42389d5b51ecea8de95e9867d6aa91aa6c938402769269b484ca28.css">
 
 
-<script defer src="../../search.min.2caae1adf980c65093c5cc4decf41324a7c8eea07428be2462a4103e22954937.js"></script>
+<script defer src="../../search.min.769b5a155d9478b50c32daadbdf616a80a38ec9e5db9854301794538c03428b0.js"></script>
 
 
 
@@ -127,61 +127,68 @@ https://github.com/wasta-linux/book-wasta
 
 <h2 id="what-is-it">What is it?</h2>
 
-<p><strong>Wasta-Backup</strong> is a simple Linux backup program for <strong><em>version-backups</em></strong> of data to an external USB device. In other words, it is an easy way to back up important files, and it keeps older versions of the files in case they are needed again.</p>
+<p><em>Wasta-Backup</em> is a simple Linux backup program for <strong><em>version-backups</em></strong> of data to an external USB device. In other words, it is an easy way to back up important files, and it keeps older versions of the files in case they are needed again.</p>
 
-<p>If you want to know more, Wasta-Backup is a simple graphical interface for rdiff-backup, which is a solid, reputable, and reliable command-line-only backup program.</p>
+<p>If you want to know more, Wasta-Backup is a simple graphical interface for <code>rdiff-backup</code>, which is a solid, reputable, and reliable command-line-only backup program. Other <code>rdiff-backup</code> wrappers (like <code>jbackpack</code>) are able to restore from wasta-backup as well - in case our simplistic interface is too limiting.</p>
 
 <h2 id="how-does-it-work">How does it work?</h2>
 
-<p>Here is a screenshot of Wasta-Backup:</p>
+<p>Here is a screenshot of <em>Wasta-Backup:</em></p>
 
 <p><p align="center"> <img src="../../img/wasta-apps/wasta-backup/wasta-backup.png" alt="Wasta-Backup Screenshot" /></p>
 
-<p>If you insert a USB device and start Wasta-Backup, the device will automatically be found and you just need to click <code>Backup</code> to begin.</p>
+<p>If you insert a USB device and start <em>Wasta-Backup,</em> the device will automatically be found and you just need to click <code>Backup</code> to begin.</p>
 
-<p>When a USB device with a <code>wasta-backup</code> folder on it (presumably from a previous backup) is inserted, Wasta-Backup will auto-launch.</p>
+<p>When a USB device with a <code>wasta-backup</code> folder on it <em>(presumably from a previous backup)</em> is inserted, <em>Wasta-Backup</em> will auto-launch.</p>
 
 <h2 id="what-gets-backed-up-exactly">What gets backed up, exactly?</h2>
 
-<p>Here is a list of the default folders that are backed up with Wasta-Backup (within a user&rsquo;s home folder):</p>
+<p>Here is the list of <em>default folders</em> that are backed up with <em>Wasta-Backup (note that <code>~</code> represents a user&rsquo;s home folder):</em></p>
 
 <ul>
-<li>Adapt It (~/Adapt It Unicode Work)</li>
-<li>Bloom (~/Bloom)</li>
-<li>Fieldworks (~/.local/share/fieldworks/Projects)</li>
-<li>Paratext (~/ParatextProjects)</li>
-<li>Paratext8 (~/Paratext8Projects)</li>
-<li>Thunderbird (~/.thunderbird)</li>
-<li>WeSay (~/WeSay)</li>
-<li>User Documents (~/Documents)</li>
-<li>User Desktop Files (~/Desktop)</li>
+<li>Adapt It: <code>~/Adapt It Unicode Work</code></li>
+<li>Bloom: <code>~/Bloom</code></li>
+<li>Fieldworks: <code>~/.local/share/fieldworks/Projects</code></li>
+<li>Paratext9: <code>~/Paratext9Projects</code></li>
+<li>Paratext8: <code>~/Paratext8Projects</code></li>
+<li>Publications: <code>~/Publications</code></li>
+<li>Thunderbird: <code>~/.thunderbird</code></li>
+<li>WeSay: <code>~/WeSay</code></li>
+<li>User Documents: <code>~/Documents</code></li>
+<li>User Desktop: <code>~/Desktop</code></li>
 </ul>
 
-<p>By default, Wasta-Backup will only backup <em>important files</em> within the Documents and Desktop folders (files with other extensions like movies and pictures will not be backed up). This is done to make sure the USB backup device is not filled up too quickly. To back up <em>all files</em> within those folders, you can use the Wasta-Backup menu to uncheck <code>File &gt; Advanced &gt; Backup File Selection &gt; Only Backup Important Files</code></p>
+<p>By default, <em>Wasta-Backup</em> will only backup <em>important files</em> within the <code>Documents</code> and <code>Desktop</code> folders <em>(files with other extensions like movies and pictures will not be backed up).</em> This is done to make sure the USB backup device is not filled up too quickly.</p>
 
-<h2 id="what-if-i-want-to-customize-what-gets-backed-up">What if I want to customize what gets backed up?</h2>
+<h2 id="how-do-i-customize-the-configuration-of-wasta-backup">How do I customize the configuration of <em>Wasta-Backup?</em></h2>
 
-<p>Wasta-Backup can be customized to meet almost anyone&rsquo;s backup needs.</p>
+<p><em>Wasta-Backup</em> can be customized to meet almost anyone&rsquo;s backup needs. The following configuration files are used by <em>Wasta-Backup:</em></p>
 
 <ul>
-<li><p><strong>To Customize Backup Folders:</strong> The list of folders that get backed up can be customized by editing this file in a user&rsquo;s home folder: <code>~/.config/wasta-backup/backupDirs.txt</code></p></li>
+<li><p><strong>backupDirs.txt:</strong> specifies which folders to backup and other parameters such as if <code>backupInclude.txt</code> should be used and the number of backup versions to keep</p></li>
 
-<li><p><strong>To Customize Backup File Types:</strong> The list of default file types that get backed up can be customized by editing this file in a user&rsquo;s home folder: <code>~/.config/wasta-backup/backupInclude.txt</code></p></li>
+<li><p><strong>backupInclude.txt:</strong> specifies which file extensions to backup, so files with media extensions, for example, will not be backed up <em>(to save space on the backup device)</em></p></li>
 </ul>
+
+<p>The above <em>default configuration files</em> are stored in a user&rsquo;s <code>~/.config/wasta-backup/</code> folder and will be used for new backup devices.</p>
+
+<p>After a backup device is used, <em>it stores the configuration files.</em> This allows each backup device to have its own configuration settings to allow for different storage capacities.</p>
+
+<p>Again to be very clear, <strong><em>once a backup location has been used for Wasta-Backup, the default configuration files in a user&rsquo;s <code>~/.config/wasta-backup/</code> are not used:</em></strong> <em>the configuration files from the backup location are used instead.</em></p>
 
 <h2 id="what-can-i-restore">What can I restore?</h2>
 
-<p>Wasta-Backup can restore:</p>
+<p><em>Wasta-Backup</em> can restore:</p>
 
 <ul>
-<li>A previous version of a file or folder (the current item is first renamed using the current date and time)</li>
-<li>A deleted file or folder</li>
+<li>A <em>previous version</em> of a file or folder (the current item is first renamed using the current date and time)</li>
+<li>A <em>deleted</em> file or folder</li>
 <li><strong>All</strong> current files and folders (such as when you are moving files from an old computer to a new computer)</li>
 </ul>
 
 <h2 id="how-do-i-install-wasta-backup">How do I install Wasta-Backup?</h2>
 
-<p>Wasta-Backup is pre-installed in Wasta-Linux. For other Ubuntu-based Linux distributions (Ubuntu, Linux Mint, etc), the easiest way to install Wasta-Backup is to use a Terminal <strong>*</strong>. Copy each of these three commands and enter them in the Terminal (one at a time; you will need to provide an administrative password):</p>
+<p><em>Wasta-Backup</em> is pre-installed in <em>Wasta-Linux.</em> For other Ubuntu-based Linux distributions (Ubuntu, Linux Mint, Pop!_OS, Zorin OS, elementary, etc), the easiest way to install <em>Wasta-Backup</em> is to use a Terminal <strong>*</strong>. Copy each of these three commands and enter them in the Terminal <em>(one at a time; you will need to provide an administrative password):</em></p>
 
 <pre><code>sudo add-apt-repository ppa:wasta-linux/wasta-apps
 sudo apt-get update
@@ -215,5 +222,5 @@ sudo apt-get install wasta-backup
 </body>
 
 
-<!-- Mirrored from www.wastalinux.org/wasta-apps/wasta-backup/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Mar 2020 12:15:32 GMT -->
+<!-- Mirrored from www.wastalinux.org/wasta-apps/wasta-backup/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Mar 2020 06:33:41 GMT -->
 </html>

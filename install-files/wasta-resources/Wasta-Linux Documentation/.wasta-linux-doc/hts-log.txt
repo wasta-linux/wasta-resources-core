@@ -1,4 +1,4 @@
-HTTrack3.49-2 launched on Mon, 02 Mar 2020 15:15:17 at https://www.wastalinux.org/ -*/downloads/*
+HTTrack3.49-2 launched on Tue, 03 Mar 2020 09:33:25 at https://www.wastalinux.org/ -*/downloads/*
 (httrack https://www.wastalinux.org/ -*/downloads/* -O ./wasta-linux-doc/ )
 
 Information, Warnings and Errors reported for this mirror:
@@ -7,5 +7,5 @@ note:	the hts-log.txt file, and hts-cache folder, may contain sensitive informat
 	do not share these files/folders if you want these information to remain private
 
 
-HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 32 seconds : 141 links scanned, 140 files written (8329103 bytes overall), 31 files updated [185682 bytes received at 1221 bytes/sec], 296038 bytes transferred using HTTP compression in 27 files, ratio 34%, 1.1 requests per connection
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 5 seconds : 141 links scanned, 140 files written (8308166 bytes overall), 31 files updated [212175 bytes received at 1697 bytes/sec], 297099 bytes transferred using HTTP compression in 27 files, ratio 34%, 1.1 requests per connection
 (No errors, 0 warnings, 0 messages)
