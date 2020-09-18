@@ -10,21 +10,12 @@
     
     
     <item>
-      <title>About</title>
-      <link>http://www.wastalinux.org/home/about-save/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.wastalinux.org/home/about-save/</guid>
-      <description> Wasta-Linux: About </description>
-    </item>
-    
-    <item>
       <title>Cinnamon-Layout</title>
       <link>http://www.wastalinux.org/wasta-apps/cinnamon-layout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.wastalinux.org/wasta-apps/cinnamon-layout/</guid>
-      <description>Cinnamon-Layout: Desktop Layout Settings Utility What is it? Cinnamon-Layout is a simple utility for changing the layout of the panel (taskbar) and other items of the desktop interface in Cinnamon (the default desktop interface of Wasta-Linux). Different preset layout configurations have been added to Cinnamon-Layout to provide different user experiences for Cinnamon.
+      <description>Cinnamon-Layout: Desktop Layout Settings Utility What is it? Cinnamon-Layout is a simple utility for changing the layout of the panel (taskbar) and other items of the desktop interface in Cinnamon (the default desktop interface of Wasta-Linux). Different preset layout configurations have been added to Cinnamon-Layout to provide different user experiences for Cinnamon.
 How do I use it? Here is a screenshot of the Cinnamon-Layout dialog:
 Simply select the desired layout and click OK.</description>
     </item>
@@ -45,7 +36,7 @@ To use Rufus, first insert a 4GB (or greater) USB drive (WARNING! using the Rufu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.wastalinux.org/home/customizing/</guid>
-      <description>Wasta-Linux: Customizing for your Needs Wasta-Linux is intended to be used as a base for regionally-localized Linux &amp;ldquo;customized&amp;rdquo; distributions specific to locations&amp;rsquo; needs (fonts, keyboards, applications, settings, included reference documents, etc.). Should you be interested in being a &amp;ldquo;regional customizer&amp;rdquo; of Wasta-Linux, please use the forums linked at the bottom of this page and someone will contact you.
+      <description>Wasta-Linux: Customizing for your Needs [Wasta-Linux] (/&amp;rdquo; &amp;gt;}}) is intended to be used as a base for regionally-localized Linux &amp;ldquo;customized&amp;rdquo; distributions specific to locations&amp;rsquo; needs (fonts, keyboards, applications, settings, included reference documents, etc.). Should you be interested in being a &amp;ldquo;regional customizer&amp;rdquo; of Wasta-Linux, please use the forums linked at the bottom of this page and someone will contact you.
 There are 2 primary Wasta-Linux customizing methods, both of which can be used to create custom Wasta-Linux ISOs to re-distribute to users:</description>
     </item>
     
@@ -56,8 +47,8 @@ There are 2 primary Wasta-Linux customizing methods, both of which can be used t
       
       <guid>http://www.wastalinux.org/home/download/</guid>
       <description>Wasta-Linux: Downloads If you are unsure of which download may be best for your hardware, please use the links at the bottom of this page to post to one of the Wasta-Linux User Forums to ask for clarification.
-18.04  Wasta-Linux-18.04.3-64Bit  updated: 2019-08-30 md5: f13a4cf5d18e8f40a5cfd0722dc1d814  Notes:
- Based on Ubuntu 18.04 &amp;ldquo;Bionic&amp;rdquo; Interface: Cinnamon is the default interface, with Gnome-Shell also installed Long-Term Support: Security updates provided by Ubuntu through April 2023 UEFI Compatible: Fully compatible with newer UEFI and Secure Boot features used by Windows 8+ computers Linux Kernel: 5.</description>
+18.04  Wasta-Linux-18.04.4-64Bit  updated: 2020-04-14 md5: 1f3913eead2cb36cad777fe41657cd04  Notes:
+ Based on Ubuntu 18.04.4 &amp;ldquo;Bionic&amp;rdquo; Interface: Cinnamon is the default interface, with Gnome-Shell also installed Long-Term Support: Security updates provided by Ubuntu through April 2023 UEFI Compatible: Fully compatible with newer UEFI and Secure Boot features used by Windows 8+ computers Linux Kernel: 5.</description>
     </item>
     
     <item>
@@ -67,7 +58,7 @@ There are 2 primary Wasta-Linux customizing methods, both of which can be used t
       
       <guid>http://www.wastalinux.org/tutorials/expand-usb-image/</guid>
       <description>Wasta-Linux: Expand Image to a USB Drive A Wasta-Linux USB image is a pre-installed and pre-configured system ready to be put on a USB drive that can be shared with others without each user needing to follow the full &amp;lsquo;Bootable USB&amp;rsquo; installation process. You will need a 64GB (or larger) high quality USB3 drive to use for your encrypted USB Wasta-Linux system.
- Download Wasta-Linux Bootable USB Image Find the Bootable USB image from the download page.</description>
+  Download Wasta-Linux Bootable USB Image Find the Bootable USB image from the download page.</description>
     </item>
     
     <item>
@@ -89,8 +80,8 @@ Why Linux? One colleague answered the question &amp;ldquo;Why Linux&amp;rdquo; c
       <guid>http://www.wastalinux.org/home/customizing/github-setup/</guid>
       <description>Wasta-Linux: GitHub Setup This page is part of the Wasta-Linux customizing process.
 Follow the below steps in order establish your GitHub ID and register a SSH key with GitHub in order to be ready to contribute to the Wasta-Linux custom packages hosted on GitHub.
- Sign up for a GitHub ID https://github.com/
- Create an Open SSH Key  &amp;ldquo;Passwords and Keys&amp;rdquo; app: Select File &amp;gt; New from the menu to create a Secure Shell Key (if you do not already have one: if you already have one you can skip ahead to step 3)</description>
+  Sign up for a GitHub ID https://github.com/
+  Create an Open SSH Key   &amp;ldquo;Passwords and Keys&amp;rdquo; app: Select File &amp;gt; New from the menu to create a Secure Shell Key (if you do not already have one: if you already have one you can skip ahead to step 3)</description>
     </item>
     
     <item>
@@ -111,7 +102,7 @@ Follow the below steps in order establish your GitHub ID and register a SSH key 
       <guid>http://www.wastalinux.org/tutorials/kiwix/</guid>
       <description>Kiwix: Wikipedia Offline Kiwix is a software utility created to use Wikipedia and other large web-based content resources when internet is not available.
 Here is an introduction to Kiwix from their website:
- The world has a connectivity issue In many places internet can be slow, unreliable or even censored. Kiwix is an offline solution that allows you to access educational content like Wikipedia, the Wiktionary, TED talks and many others on any computer or smartphone - without the need for a live internet connection.</description>
+ The world has a connectivity issue   In many places internet can be slow, unreliable or even censored. Kiwix is an offline solution that allows you to access educational content like Wikipedia, the Wiktionary, TED talks and many others on any computer or smartphone - without the need for a live internet connection.</description>
     </item>
     
     <item>
@@ -120,7 +111,7 @@ Here is an introduction to Kiwix from their website:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.wastalinux.org/home/customizing/launchpad-setup/</guid>
-      <description> Launchpad Setup </description>
+      <description>Launchpad Setup under construction&amp;hellip;</description>
     </item>
     
     <item>
@@ -168,7 +159,7 @@ Git is used for version control of all the Wasta-Linux custom packages. There is
       
       <guid>http://www.wastalinux.org/tutorials/usb-install/</guid>
       <description>Wasta-Linux: Installing to an Encrypted USB Drive It may be desirable to install Wasta-Linux to an encrypted USB drive for security or portability. Following this guide you will need 2 USB drives, one with a standard Wasta-Linux &amp;ldquo;live installer&amp;rdquo; ISO and a second USB drive (preferably a 32+ GB high quality USB3 drive) that will be your target encrypted USB Wasta-Linux system.
- Machine Setup In order to ensure the USB drive will be UEFI/Secure Boot compatible, make sure the machine is in &amp;ldquo;Secure Boot / UEFI mode.</description>
+  Machine Setup In order to ensure the USB drive will be UEFI/Secure Boot compatible, make sure the machine is in &amp;ldquo;Secure Boot / UEFI mode.</description>
     </item>
     
     <item>
@@ -178,18 +169,8 @@ Git is used for version control of all the Wasta-Linux custom packages. There is
       
       <guid>http://www.wastalinux.org/tutorials/tutorial-guidelines/</guid>
       <description>Guidelines for Creating Wasta-Linux Tutorials Screenshots Shutter is the application recommended for creating screenshots to use in Wasta-Linux Tutorials. As with most screenshot utilities, you have the ability to screenshot your entire desktop, a specific application window, or a selected area of your desktop.
- Shutter Main Window Hilighted above are the basic options for taking screenshots using the Shutter Main Window:
+  Shutter Main Window Hilighted above are the basic options for taking screenshots using the Shutter Main Window:
  1. Selection: take screenshot of selected area of your desktop</description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>http://www.wastalinux.org/tutorials/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.wastalinux.org/tutorials/</guid>
-      <description>Wasta-Linux Tutorials Installation / Upgrade  Standard Installation  Create a bootable Wasta-Linux USB installation drive  In-Place Upgrades between different Wasta-Linux versions  Re-installing / Upgrading Wasta-Linux for users without a separate /home partition  Virtualbox  Installing Wasta-Linux to VirtualBox  Installing Wasta-Linux to a target USB Drive  Standard (&amp;ldquo;full&amp;rdquo;) installation to an encrypted USB drive
- Requires the user to be familiar with traditional Linux installations  Copying a pre-configured USB image to a USB drive</description>
     </item>
     
     <item>
@@ -199,7 +180,7 @@ Git is used for version control of all the Wasta-Linux custom packages. There is
       
       <guid>http://www.wastalinux.org/home/ubuntu-migration/</guid>
       <description>How to turn Ubuntu into Wasta-Linux To take an existing Ubuntu 18.04 system and change it into Wasta-Linux 18.04, from a Terminal * perform the following steps:
- NOTE: Wasta-Linux only targets Ubuntu LTS (Long Term Support) releases, such as 18.04, 16.04, etc. Interim short-term Ubuntu releases such as 19.10, 19.04, etc. are not supported.   Get the Wasta-Linux core package installed: The following Terminal * commands (perform them one at a time) are needed to install the all-essential wasta-core-bionic package, which is the foundation for Wasta-Linux:</description>
+ NOTE: Wasta-Linux only targets Ubuntu LTS (Long Term Support) releases, such as 18.04, 16.04, etc. Interim short-term Ubuntu releases such as 19.10, 19.04, etc. are not supported.    Get the Wasta-Linux core package installed: The following Terminal * commands (perform them one at a time) are needed to install the all-essential wasta-core-bionic package, which is the foundation for Wasta-Linux:</description>
     </item>
     
     <item>
@@ -208,26 +189,7 @@ Git is used for version control of all the Wasta-Linux custom packages. There is
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.wastalinux.org/tutorials/virtualbox-install/</guid>
-      <description>Wasta-Linux VirutalBox Installation In general, Wasta-Linux runs fine in VirtualBox after the VirtualBox Guest Additions have been installed on the Wasta-Linux guest virtual machine and settings are made correctly. Before the VirtualBox Guest Additions are installed, it will not be possible to enable &amp;ldquo;3D Graphics&amp;rdquo;, which Cinnamon requires, and you will get a warning message when logging in that you are in &amp;ldquo;Software Rendering Mode&amp;rdquo;. There are a few quirks to getting these &amp;ldquo;Guest Additions&amp;rdquo; installed that are documented here.</description>
-    </item>
-    
-    <item>
-      <title>Wasta Applications</title>
-      <link>http://www.wastalinux.org/wasta-apps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.wastalinux.org/wasta-apps/</guid>
-      <description>Wasta Applications These applications have been created specifically with Wasta-Linux users in mind, and are pre-installed in Wasta-Linux:
- Wasta-Backup: simple &amp;ldquo;version backup&amp;rdquo; utility
- Wasta-Offline: offline software updates and installs
- Cinnamon-Layout: desktop layout settings utility
- Wasta-Menus: limits the visible applications in the Main Menu
- Wasta-Resources: centralized distribution of reference and documentation materials
-  &amp;nbsp;
-&amp;nbsp;
-&amp;nbsp;
-&amp;nbsp;
-&amp;nbsp;</description>
+      <description>Wasta-Linux VirutalBox Installation In general, [Wasta-Linux] (/) runs fine in VirtualBox after the VirtualBox Guest Additions have been installed on the Wasta-Linux guest virtual machine and settings are made correctly. Before the VirtualBox Guest Additions are installed, it will not be possible to enable &amp;ldquo;3D Graphics&amp;rdquo;, which Cinnamon requires, and you will get a warning message when logging in that you are in &amp;ldquo;Software Rendering Mode&amp;rdquo;. There are a few quirks to getting these &amp;ldquo;Guest Additions&amp;rdquo; installed that are documented here.</description>
     </item>
     
     <item>
@@ -268,8 +230,8 @@ With Wasta-Menus enabled, a Wasta-Linux computer could serve as a kiosk omputer 
       <description>Wasta-Remastersys This page is part of the Wasta-Linux customizing process.
 The Wasta-Linux ISOs are created using Wasta-Remastersys. Wasta-Remastersys is also pre-installed in Wasta-Linux so that anyone can use it to create their own customized Wasta-Linux ISO.
 In order to create your own custom ISO, you can follow these steps:
- Install Wasta-Linux It is preferable to do this on a &amp;ldquo;clean test machine&amp;rdquo; designated for this process.
- Customize Wasta-Linux Follow either method listed on the Wasta-Linux customizing page.</description>
+  Install Wasta-Linux It is preferable to do this on a &amp;ldquo;clean test machine&amp;rdquo; designated for this process.
+  Customize Wasta-Linux Follow either method listed on the Wasta-Linux customizing page.</description>
     </item>
     
     <item>
@@ -283,13 +245,24 @@ The location is /usr/share/wasta-resources. Any package can place items here (We
     </item>
     
     <item>
+      <title>Wasta-Snap-Manager</title>
+      <link>http://www.wastalinux.org/wasta-apps/wasta-snap-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.wastalinux.org/wasta-apps/wasta-snap-manager/</guid>
+      <description>Wasta-Snap-Manager Selectively manage snap packages offline or online What are snap packages? From https://snapcraft.io/docs/getting-started:
+ A snap is a bundle of an app and its dependencies that works without modification across many different Linux distributions. Snaps are discoverable and installable from the Snap Store, an app store with an audience of millions.
+ From https://snapcraft.io/docs:
+ Snaps are app packages for desktop, cloud and IoT that are easy to install, secure, cross-platform and dependency-free.</description>
+    </item>
+    
+    <item>
       <title>Why Linux?</title>
       <link>http://www.wastalinux.org/home/why-linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.wastalinux.org/home/why-linux/</guid>
-      <description>Why Linux: a case study from our Organization* in NE Africa by Rik Shaw
-In 2012, our Organization, which supports translation and literacy projects in NE Africa, began migrating our computer operating systems from Windows to Linux. As of March 2014, all machines in this NE Africa location were migrated to Linux. As of 2019, several other of our Organization&amp;rsquo;s locations in Africa, North America, and Asia, have begun to embrace Linux, accounting for several hundred additional installations worldwide.</description>
+      <description>Why Linux: a case study from our Organization* in NE Africa In 2012, our Organization, which supports translation and literacy projects in NE Africa, began migrating our computer operating systems from Windows to Linux. As of March 2014, all machines in this NE Africa location were migrated to Linux. As of 2019, several other of our Organization&amp;rsquo;s locations in Africa, North America, and Asia, have begun to embrace Linux, accounting for several hundred additional installations worldwide.</description>
     </item>
     
   </channel>

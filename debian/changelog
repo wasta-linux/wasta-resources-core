@@ -1,3 +1,9 @@
+wasta-resources-core (2.2.4) focal; urgency=medium
+
+  * re-sync'd from wastalinux.org
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Fri, 18 Sep 2020 12:19:57 +0300
+
 wasta-resources-core (2.2.3) bionic; urgency=medium
 
   * update wasta-backup page

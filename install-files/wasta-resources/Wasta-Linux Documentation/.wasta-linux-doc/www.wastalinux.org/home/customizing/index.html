@@ -2,17 +2,17 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.wastalinux.org/home/customizing/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Mar 2020 06:33:39 GMT -->
+<!-- Mirrored from www.wastalinux.org/home/customizing/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:14:43 GMT -->
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Customizing | wasta [Linux]</title>
 
 
-<link rel="stylesheet" href="../../book.min.17ae4652bd42389d5b51ecea8de95e9867d6aa91aa6c938402769269b484ca28.css">
+<link rel="stylesheet" href="../../book.min.12687d6b2f9c17ec42179e86623848c3091e7f3962c936ff8555e2e41a1a9815.css">
 
 
-<script defer src="../../search.min.769b5a155d9478b50c32daadbdf616a80a38ec9e5db9854301794538c03428b0.js"></script>
+<script defer src="../../search.min.c5db3cb65423fb36985e4f6524996c886fbb096d98fdf834ba0d56cf06e6e252.js"></script>
 
 
 
@@ -35,7 +35,7 @@ https://github.com/wasta-linux/book-wasta
       <nav>
 <h1 class="book-brand" align="center">
   <a href="../../index.html"><img src="../../img/site-logo-64.png" alt="Logo"></a>
-<br>wasta [Linux]
+wasta [Linux]
 </h1>
 
 
@@ -62,22 +62,23 @@ https://github.com/wasta-linux/book-wasta
 
 <ul>
 <li><a href="../../index.html"><strong>Wasta-Linux: Home</strong></a>
-
 <ul>
 <li><a href="../faq/index.html">Frequently Asked Questions</a></li>
 <li><a href="../download/index.html">Download</a></li>
 <li><a href="../ubuntu-migration/index.html">Migrating from Ubuntu</a></li>
 <li><a href="index.html">Customizing</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href="../../wasta-apps/index.html"><strong>Wasta Apps</strong></a>
-
 <ul>
 <li><a href="../../wasta-apps/wasta-backup/index.html">Wasta-Backup</a></li>
 <li><a href="../../wasta-apps/wasta-offline/index.html">Wasta-Offline</a></li>
 <li><a href="../../wasta-apps/cinnamon-layout/index.html">Cinnamon-Layout</a></li>
+<li><a href="../../wasta-apps/wasta-snap-manager/index.html">Wasta-Snap-Manager</a></li>
 <li><a href="../../wasta-apps/wasta-menus/index.html">Wasta-Menus</a></li>
 <li><a href="../../wasta-apps/wasta-resources/index.html">Wasta-Resources</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href="../../tutorials/index.html"><strong>Tutorials</strong></a></li>
 <li><a href="../why-linux/index.html"><strong>Why Linux?</strong></a></li>
 </ul>
@@ -114,63 +115,63 @@ https://github.com/wasta-linux/book-wasta
     <img src="../../svg/menu.svg" alt="Menu" />
   </label>
   &nbsp;&nbsp;&nbsp;
-  <img src="../../img/site-logo-32.png" alt="Logo" />
+  <a href="../../index.html"><img src="../../img/site-logo-32.png" alt="Logo" style="margin-left: 0; margin-right: 0;"/></a>
   &nbsp; wasta [Linux]
 </h2>
 
       
-<article class="markdown">
-
-<p><p align="center"> <img src="../../img/wasta-linux-round-128.png" alt="Wasta-Linux" /></p>
-
+<article class="markdown"><p><img src="../../media/wasta-linux-round-128.png" alt="Wasta-Linux"></p>
 <h1 id="wasta-linux-customizing-for-your-needs">Wasta-Linux: Customizing for your Needs</h1>
-
-<p><a href="../../index.html">Wasta-Linux</a> is intended to be used as a base for regionally-localized Linux &ldquo;customized&rdquo; distributions specific to locations&rsquo; needs (fonts, keyboards, applications, settings, included reference documents, etc.). </p>
-
+<p>[Wasta-Linux] (/&rdquo; &gt;}}) is intended to be used as a base for regionally-localized Linux &ldquo;customized&rdquo; distributions specific to locations&rsquo; needs (fonts, keyboards, applications, settings, included reference documents, etc.). </p>
 <p>Should you be interested in being a &ldquo;regional customizer&rdquo; of Wasta-Linux, please use the forums linked at the bottom of this page and someone will contact you.</p>
-
 <p>There are 2 primary Wasta-Linux customizing methods, both of which can be used to <a href="wasta-remastersys/index.html">create custom Wasta-Linux ISOs</a> to re-distribute to users:</p>
-
 <ol>
-<li><h2 id="manual-customization">Manual customization</h2>
-
-<p>Basically, install Wasta-Linux on a clean test system, and make the adjustments you want manually.  Then follow the <a href="wasta-remastersys/index.html">process to create a custom Wasta-Linux ISO</a>.  If you make future modifications, you can re-create the ISO.  But, any customizations you make in the future that you want to distribute to <em>existing</em> users that installed your previous ISO will need to be individually made on each machine.  Due to this limitation, see method 2 below.</p></li>
-
-<li><h2 id="create-a-wasta-custom-xyz-package">Create a <code>wasta-custom-xyz</code> package</h2>
-
+<li>
+<h2 id="manual-customization">Manual customization</h2>
+<p>Basically, install Wasta-Linux on a clean test system, and make the adjustments you want manually.  Then follow the <a href="wasta-remastersys/index.html">process to create a custom Wasta-Linux ISO</a>.  If you make future modifications, you can re-create the ISO.  But, any customizations you make in the future that you want to distribute to <em>existing</em> users that installed your previous ISO will need to be individually made on each machine.  Due to this limitation, see method 2 below.</p>
+</li>
+<li>
+<h2 id="create-a-wasta-custom-xyz-package">Create a <code>wasta-custom-xyz</code> package</h2>
 <p>The main advantage of creating a <code>wasta-custom-xyz</code> package is that any future adjustments you make to your customizations will be automatically re-distributed to anyone with the wasta-custom-xyz package installed when they update their system.  Here is an overview of the process to create and maintain a <code>wasta-custom-xyz</code> package:</p>
-
 <ol>
-<li><h3 id="create-a-wasta-custom-xyz-package-1">Create a <code>wasta-custom-xyz</code> Package:</h3>
-
+<li>
+<h3 id="create-a-wasta-custom-xyz-package-1">Create a <code>wasta-custom-xyz</code> Package:</h3>
 <p>Work with the Wasta-Linux team to create a new &ldquo;package&rdquo; called <code>wasta-custom-xyz</code> with all your desired customizations included.  The Wasta-Linux team will create the first version of this package for you.  Once this package is created, installing <code>wasta-custom-xyz</code> on any Wasta-Linux computer will include all of your customizations.</p>
-
 <p>Examples of customizations that can be included in a <code>wasta-custom-xyz</code> package include:</p>
-
 <ul>
-<li><p><strong><em>LibreOffice Default Settings:</em></strong> Use .doc, .xls extensions, enable complex text layout, set default language settings, etc.</p></li>
-
-<li><p><strong><em>Additional Keyboards:</em></strong> Install additional language keyboards.</p></li>
-
-<li><p><strong><em>Additional Fonts:</em></strong> Install additional fonts</p></li>
-
-<li><p><strong><em>Additional Applications:</em></strong> Install applications on ALL computers with wasta-custom-xyz such as Paratext, AdaptIt, FieldWorks, etc.</p></li>
-
-<li><p><strong><em>System Default Settings:</em></strong> Customize settings such as the default background image, touchpad behavior, default &ldquo;application favorites&rdquo;, etc.</p></li>
-
-<li><p><strong><em>Wasta-Menus Default List:</em></strong> Customize the default Applications that are included in Wasta-Menus.</p></li>
-
-<li><p><strong><em>Reference Documents:</em></strong> Include a folder of reference documents that can optionally be linked to each users Home Directory.</p></li>
-</ul></li>
-
-<li><h3 id="maintain-the-wasta-custom-xyz-package">Maintain the <code>wasta-custom-xyz</code> Package:</h3>
-
-<p>Ideally any future modifications to this &lsquo;wasta-custom-xyz&rsquo; package will be made directly by you, the regional customizer. <a href="maintain-package/index.html">Follow this guide to maintain &lsquo;wasta-custom-xyz&rsquo; custom packages</a>.</p></li>
-
-<li><h3 id="optional-create-a-custom-wasta-linux-iso">(Optional) Create a Custom Wasta-Linux ISO:</h3>
-
-<p>As with method 1 above, you can install Wasta-Linux on a clean test system, then install your <code>wasta-custom-xyz</code> package, and then follow the <a href="wasta-remastersys/index.html">process to create a custom Wasta-Linux ISO</a>.</p></li>
-</ol></li>
+<li>
+<p><em><strong>LibreOffice Default Settings:</strong></em> Use .doc, .xls extensions, enable complex text layout, set default language settings, etc.</p>
+</li>
+<li>
+<p><em><strong>Additional Keyboards:</strong></em> Install additional language keyboards.</p>
+</li>
+<li>
+<p><em><strong>Additional Fonts:</strong></em> Install additional fonts</p>
+</li>
+<li>
+<p><em><strong>Additional Applications:</strong></em> Install applications on ALL computers with wasta-custom-xyz such as Paratext, AdaptIt, FieldWorks, etc.</p>
+</li>
+<li>
+<p><em><strong>System Default Settings:</strong></em> Customize settings such as the default background image, touchpad behavior, default &ldquo;application favorites&rdquo;, etc.</p>
+</li>
+<li>
+<p><em><strong>Wasta-Menus Default List:</strong></em> Customize the default Applications that are included in Wasta-Menus.</p>
+</li>
+<li>
+<p><em><strong>Reference Documents:</strong></em> Include a folder of reference documents that can optionally be linked to each users Home Directory.</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="maintain-the-wasta-custom-xyz-package">Maintain the <code>wasta-custom-xyz</code> Package:</h3>
+<p>Ideally any future modifications to this &lsquo;wasta-custom-xyz&rsquo; package will be made directly by you, the regional customizer. <a href="maintain-package/index.html">Follow this guide to maintain &lsquo;wasta-custom-xyz&rsquo; custom packages</a>.</p>
+</li>
+<li>
+<h3 id="optional-create-a-custom-wasta-linux-iso">(Optional) Create a Custom Wasta-Linux ISO:</h3>
+<p>As with method 1 above, you can install Wasta-Linux on a clean test system, then install your <code>wasta-custom-xyz</code> package, and then follow the <a href="wasta-remastersys/index.html">process to create a custom Wasta-Linux ISO</a>.</p>
+</li>
+</ol>
+</li>
 </ol>
 </article>
 
@@ -196,5 +197,5 @@ https://github.com/wasta-linux/book-wasta
 </body>
 
 
-<!-- Mirrored from www.wastalinux.org/home/customizing/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Mar 2020 06:33:40 GMT -->
+<!-- Mirrored from www.wastalinux.org/home/customizing/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:14:44 GMT -->
 </html>

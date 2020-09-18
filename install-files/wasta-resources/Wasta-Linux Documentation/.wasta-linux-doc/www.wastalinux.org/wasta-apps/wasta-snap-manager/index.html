@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.wastalinux.org/wasta-apps/wasta-snap-manager/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:14:49 GMT -->
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wasta-Snap-Manager | wasta [Linux]</title>
+
+
+<link rel="stylesheet" href="../../book.min.12687d6b2f9c17ec42179e86623848c3091e7f3962c936ff8555e2e41a1a9815.css">
+
+
+<script defer src="../../search.min.c5db3cb65423fb36985e4f6524996c886fbb096d98fdf834ba0d56cf06e6e252.js"></script>
+
+
+
+<link rel="icon" href="../../favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Wasta Theme
+https://github.com/wasta-linux/book-wasta
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h1 class="book-brand" align="center">
+  <a href="../../index.html"><img src="../../img/site-logo-64.png" alt="Logo"></a>
+wasta [Linux]
+</h1>
+
+
+<div class="book-search">
+  <input type="text" placeholder="Search" id="book-search-input" maxlength="64" readonly />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2fwasta-apps\2fwasta-snap-manager\2f "] {
+      color: #383c4a;
+  }
+  </style>
+
+<ul>
+<li><a href="../../index.html"><strong>Wasta-Linux: Home</strong></a>
+<ul>
+<li><a href="../../home/faq/index.html">Frequently Asked Questions</a></li>
+<li><a href="../../home/download/index.html">Download</a></li>
+<li><a href="../../home/ubuntu-migration/index.html">Migrating from Ubuntu</a></li>
+<li><a href="../../home/customizing/index.html">Customizing</a></li>
+</ul>
+</li>
+<li><a href="../index.html"><strong>Wasta Apps</strong></a>
+<ul>
+<li><a href="../wasta-backup/index.html">Wasta-Backup</a></li>
+<li><a href="../wasta-offline/index.html">Wasta-Offline</a></li>
+<li><a href="../cinnamon-layout/index.html">Cinnamon-Layout</a></li>
+<li><a href="index.html">Wasta-Snap-Manager</a></li>
+<li><a href="../wasta-menus/index.html">Wasta-Menus</a></li>
+<li><a href="../wasta-resources/index.html">Wasta-Resources</a></li>
+</ul>
+</li>
+<li><a href="../../tutorials/index.html"><strong>Tutorials</strong></a></li>
+<li><a href="../../home/why-linux/index.html"><strong>Why Linux?</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center book-header">
+  <label for="menu-control">
+    <img src="../../svg/menu.svg" alt="Menu" />
+  </label>
+</header>
+<h2 class="flex align-center book-header-show">
+  <label for="menu-control">
+    <img src="../../svg/menu.svg" alt="Menu" />
+  </label>
+  &nbsp;&nbsp;&nbsp;
+  <a href="../../index.html"><img src="../../img/site-logo-32.png" alt="Logo" style="margin-left: 0; margin-right: 0;"/></a>
+  &nbsp; wasta [Linux]
+</h2>
+
+      
+<article class="markdown"><p><img src="../../media/wasta-apps/wasta-snap-manager/wasta-snap-manager-dark-128.png" alt="Wasta-Snap-Manager"></p>
+<h1 id="wasta-snap-manager">Wasta-Snap-Manager</h1>
+<h1 id="selectively-manage-snap-packages-offline-or-online">Selectively manage snap packages offline or online</h1>
+<h2 id="what-are-snap-packages">What are snap packages?</h2>
+<p>From <a href="https://snapcraft.io/docs/getting-started">https://snapcraft.io/docs/getting-started:</a></p>
+<blockquote>
+<p>A snap is a bundle of an app and its dependencies that works without modification across many different Linux distributions. Snaps are discoverable and installable from the Snap Store, an app store with an audience of millions.</p>
+</blockquote>
+<p>From <a href="https://snapcraft.io/docs">https://snapcraft.io/docs:</a></p>
+<blockquote>
+<p>Snaps are app packages for desktop, cloud and IoT that are easy to install, secure, cross-platform and dependency-free.</p>
+<ul>
+<li>snap is both the command line interface and the application package format</li>
+<li>snapd is the background service that manages and maintains your snaps</li>
+<li>snapcraft is the command and the framework used to build your own snaps</li>
+<li>Snap Store provides a place to upload your snaps, and for users to browse and install</li>
+</ul>
+</blockquote>
+<h2 id="why-should-i-care-about-snaps">Why should I care about snaps?</h2>
+<p>Wasta-Linux is based on Ubuntu, and, Canonical, the company behind Ubuntu, is the creator of the snap packaging system. Canonical is heavily invested in using and promoting snaps; for example, as of Ubuntu 20.04, Chromium browser is only available as a snap package and no longer as a deb package. Therefore, it&rsquo;s wise to make efforts to accommodate snap packages if at all possible.</p>
+<p>However, one of the main &ldquo;features&rdquo; of snaps, security, can also show up as a &ldquo;bug&rdquo; for people with limited and expensive internet connections. <strong>To ensure security (with default settings) snaps are automatically and regularly updated in the background with zero user input or knowledge.</strong> It&rsquo;s great peace of mind if you&rsquo;re on flat-fee monthly broadband contract, but it can lead to sudden, inexplicable mobile data depletion if you pay for your internet by the megabyte, and if you have to regularly remember to buy the next prepaid plan before your current one runs out. Because of this lack of control over updates, as well as some complications due to snap packages taking up more disk space than their deb cousins, Wasta is not currently released with the snapd system installed.</p>
+<h2 id="how-do-i-manage-them-in-wasta">How do I manage them in Wasta?</h2>
+<p>However, you may find that snap packages can be very useful in certain circumstances and want to use them anyway. Wasta-Snap-Manager has been built to help you in this endeavor. Its primary features are:</p>
+<ul>
+<li>Easily set snap system settings to have as much control as possible over when snap updates are attempted. For example, the suggested Wasta setting is: &ldquo;sun5,02:00&rdquo;, which means &ldquo;Automatically install updates at 2am on the last Sunday of the month,&rdquo; in contrast to the default Ubuntu setting: &ldquo;00:00~24:00/4&rdquo;, which means &ldquo;4 times every day.&rdquo;</li>
+<li>Selectively choose which snaps to update, rather than &ldquo;all or nothing&rdquo;.</li>
+<li>Use Wasta-Offline to install or update snaps. (Wasta-Offline-Setup will add snap packages to Wasta-Offline if snapd is installed.)</li>
+</ul>
+<p> </p>
+<h3 id="manage-snap-system-settings">Manage snap system settings</h3>
+<p><img src="../../media/wasta-apps/wasta-snap-manager/snap-settings.75.png" alt="snap-settings">
+ </p>
+<h3 id="selectively-choose-which-snaps-to-update">Selectively choose which snaps to update</h3>
+<p><img src="../../media/wasta-apps/wasta-snap-manager/wasta-snap-manager--installed.75.png" alt="wsm-installed">
+ </p>
+<h3 id="install-or-update-snaps-from-a-wasta-offline-folder">Install or update snaps from a Wasta-Offline folder</h3>
+<p><img src="../../media/wasta-apps/wasta-snap-manager/wasta-snap-manager--available.75.png" alt="wsm-available">
+ </p>
+<h2 id="what-about-flatpaks-appimages-etc">What about flatpaks, AppImages, etc.?</h2>
+<p>There are some other &ldquo;all-in-one&rdquo; app+package systems out there, and I will consider (or accept help in considering&hellip;) whether or not to also incorporate them into Wasta&rsquo;s ecosystem. But the initial focus has been on snap packages because of their centrality to Ubuntu&rsquo;s ecosystem.</p>
+</article>
+
+      
+      <h3 class="wasta-footer"><b>Questions or comments?</b></h3>
+<p  class="wasta-footer"><i>Leave any questions or comments on one of the Wasta-Linux User Forums should you need any help:</i>
+<ul class="wasta-footer">
+  <li><a href="https://groups.google.com/forum/#!forum/wasta-linux-users" target="_blank">Wasta-Linux Users Forum (English)</a></li>
+  <li><a href="https://groups.google.com/forum/#!forum/utilisateurs-wasta-linux" target="_blank">Groupe d'utilisateurs de Wasta-Linux (francais)</a></li>
+</ul>
+
+    </div>
+
+    
+  
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+
+<!-- Mirrored from www.wastalinux.org/wasta-apps/wasta-snap-manager/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:14:49 GMT -->
+</html>

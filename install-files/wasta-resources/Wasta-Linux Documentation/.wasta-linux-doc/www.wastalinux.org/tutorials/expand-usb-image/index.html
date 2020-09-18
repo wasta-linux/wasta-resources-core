@@ -2,17 +2,17 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.wastalinux.org/tutorials/expand-usb-image/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Mar 2020 06:33:49 GMT -->
+<!-- Mirrored from www.wastalinux.org/tutorials/expand-usb-image/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:15:01 GMT -->
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Expand Image to USB Drive | wasta [Linux]</title>
 
 
-<link rel="stylesheet" href="../../book.min.17ae4652bd42389d5b51ecea8de95e9867d6aa91aa6c938402769269b484ca28.css">
+<link rel="stylesheet" href="../../book.min.12687d6b2f9c17ec42179e86623848c3091e7f3962c936ff8555e2e41a1a9815.css">
 
 
-<script defer src="../../search.min.769b5a155d9478b50c32daadbdf616a80a38ec9e5db9854301794538c03428b0.js"></script>
+<script defer src="../../search.min.c5db3cb65423fb36985e4f6524996c886fbb096d98fdf834ba0d56cf06e6e252.js"></script>
 
 
 
@@ -35,7 +35,7 @@ https://github.com/wasta-linux/book-wasta
       <nav>
 <h1 class="book-brand" align="center">
   <a href="../../index.html"><img src="../../img/site-logo-64.png" alt="Logo"></a>
-<br>wasta [Linux]
+wasta [Linux]
 </h1>
 
 
@@ -62,22 +62,23 @@ https://github.com/wasta-linux/book-wasta
 
 <ul>
 <li><a href="../../index.html"><strong>Wasta-Linux: Home</strong></a>
-
 <ul>
 <li><a href="../../home/faq/index.html">Frequently Asked Questions</a></li>
 <li><a href="../../home/download/index.html">Download</a></li>
 <li><a href="../../home/ubuntu-migration/index.html">Migrating from Ubuntu</a></li>
 <li><a href="../../home/customizing/index.html">Customizing</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href="../../wasta-apps/index.html"><strong>Wasta Apps</strong></a>
-
 <ul>
 <li><a href="../../wasta-apps/wasta-backup/index.html">Wasta-Backup</a></li>
 <li><a href="../../wasta-apps/wasta-offline/index.html">Wasta-Offline</a></li>
 <li><a href="../../wasta-apps/cinnamon-layout/index.html">Cinnamon-Layout</a></li>
+<li><a href="../../wasta-apps/wasta-snap-manager/index.html">Wasta-Snap-Manager</a></li>
 <li><a href="../../wasta-apps/wasta-menus/index.html">Wasta-Menus</a></li>
 <li><a href="../../wasta-apps/wasta-resources/index.html">Wasta-Resources</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href="../index.html"><strong>Tutorials</strong></a></li>
 <li><a href="../../home/why-linux/index.html"><strong>Why Linux?</strong></a></li>
 </ul>
@@ -114,61 +115,44 @@ https://github.com/wasta-linux/book-wasta
     <img src="../../svg/menu.svg" alt="Menu" />
   </label>
   &nbsp;&nbsp;&nbsp;
-  <img src="../../img/site-logo-32.png" alt="Logo" />
+  <a href="../../index.html"><img src="../../img/site-logo-32.png" alt="Logo" style="margin-left: 0; margin-right: 0;"/></a>
   &nbsp; wasta [Linux]
 </h2>
 
       
-<article class="markdown">
-
-<p><p align="center"> <img src="../../img/wasta-linux-round-128.png" alt="Wasta-Linux" /></p>
-
+<article class="markdown"><p><img src="../../media/wasta-linux-round-128.png" alt="Wasta-Linux"></p>
 <h1 id="wasta-linux-expand-image-to-a-usb-drive">Wasta-Linux: Expand Image to a USB Drive</h1>
-
 <p>A <em>Wasta-Linux</em> USB image is a pre-installed and pre-configured system ready to be put on a USB drive that can be shared with others without each user needing to follow the full <a href="../create-bootable-usb/index.html">&lsquo;Bootable USB&rsquo; installation process</a>. You will need a 64GB (or larger) high quality USB3 drive to use for your encrypted USB <em>Wasta-Linux</em> system.</p>
-
 <ol>
-<li><h2 id="download-wasta-linux-bootable-usb-image">Download Wasta-Linux Bootable USB Image</h2>
-
-<p>Find the Bootable USB image from the <a href="../../home/download/index.html">download page</a>. <strong><em>Note the large size of image files (exceeding 40GB!)</em></strong> due to them being encrypted, fully pre-installed, and pre-configured systems!</p></li>
-
-<li><h2 id="decompress-image-file">Decompress Image file</h2>
-
+<li>
+<h2 id="download-wasta-linux-bootable-usb-image">Download Wasta-Linux Bootable USB Image</h2>
+<p>Find the Bootable USB image from the <a href="../../home/download/index.html">download page</a>. <em><strong>Note the large size of image files (exceeding 40GB!)</strong></em> due to them being encrypted, fully pre-installed, and pre-configured systems!</p>
+</li>
+<li>
+<h2 id="decompress-image-file">Decompress Image file</h2>
 <p>The image file is compressed in <code>.bz2</code> format to reduce the size of the download. To decompress, in a standard <em>Wasta-Linux</em> system, right-click and choose <code>Extract Here</code>:</p>
-
-<p><p align="center"> <img src="../../img/tutorials/expand-usb-image/extract-here.png" alt="Extract Here" /></p>
-
+<p><img src="../../media/tutorials/expand-usb-image/extract-here.png" alt="Extract Here"></p>
 <p>The result should be a <code>.img</code> file which is now ready to be expanded to a USB drive.</p>
-
 <ul>
-<li><strong><em>Windows Users:</em></strong> If you are using <em>Windows</em>, <code>7-Zip</code> should be able to extract the <code>.img</code> file from the compressed <code>.bz2</code> download.</li>
-</ul></li>
-
-<li><h2 id="insert-and-identify-usb-drive-root">Insert and Identify USB Drive Root</h2>
-
+<li><em><strong>Windows Users:</strong></em> If you are using <em>Windows</em>, <code>7-Zip</code> should be able to extract the <code>.img</code> file from the compressed <code>.bz2</code> download.</li>
+</ul>
+</li>
+<li>
+<h2 id="insert-and-identify-usb-drive-root">Insert and Identify USB Drive Root</h2>
 <p>Insert your USB drive and use <code>Disks</code> from the <code>Main Menu</code> to identify which device it is:</p>
-
-<p><p align="center"> <img src="../../img/tutorials/expand-usb-image/identify-drive.png" alt="Identify Drive" /></p>
-
+<p><img src="../../media/tutorials/expand-usb-image/identify-drive.png" alt="Identify Drive"></p>
 <p>In this example, the USB partition is listed as <code>/dev/sdd1</code>. <strong>The root of this USB device is then <code>/dev/sdd</code>.</strong></p>
-
 <p><strong>Important:</strong> Make sure you correctly identify your device! Choosing a wrong device will wipe out your data!</p>
-
 <ul>
-<li><strong><em>Windows Users:</em></strong> If you are using <em>Windows</em> you need to identify what drive letter your target USB device takes when you insert it, such as <code>E:</code>, for example.</li>
-</ul></li>
-
-<li><h2 id="expand-image-to-usb-drive">Expand Image to USB Drive</h2>
-
+<li><em><strong>Windows Users:</strong></em> If you are using <em>Windows</em> you need to identify what drive letter your target USB device takes when you insert it, such as <code>E:</code>, for example.</li>
+</ul>
+</li>
+<li>
+<h2 id="expand-image-to-usb-drive">Expand Image to USB Drive</h2>
 <p>The most simple and least error-prone way to expand the image file to the USB drive is to use <code>ddrescue</code> (preinstalled in <em>Wasta-Linux</em>) in the terminal. In an empty space of your folder with the <code>.img</code> file in it, right-click and choose <code>Open in Terminal</code> and proceed with the below command:</p>
-
 <pre><code>sudo ddrescue --force ./wasta-bt-2019-11-22.img /dev/sdd
-</code></pre>
-
-<p>Note that <code>--force</code> is needed since it will overwrite the existing data on the USB drive. Again make sure from <code>Step 3</code> that you have identified your USB drive correctly!</p>
-
+</code></pre><p>Note that <code>--force</code> is needed since it will overwrite the existing data on the USB drive. Again make sure from <code>Step 3</code> that you have identified your USB drive correctly!</p>
 <p><code>ddrescue</code> does a nice job of giving feedback on how much time is remaining. Since the <code>.img</code> file is 60+ GB in size, it will take some time!</p>
-
 <pre><code>$ sudo ddrescue --force ./wasta-bt-2019-11-22.img /dev/sdd
 [sudo] password for rik:
 GNU ddrescue 1.22
@@ -179,70 +163,60 @@ non-tried:   59194 MB,  bad-sector:     0 B,    error rate:       0 B/s
 pct rescued:    3.75%, read errors:     0,  remaining time:         45m
                            time since last successful read:          0s
 Copying non-tried blocks... Pass 1 (forwards)
-</code></pre>
-
-<p>In the above example, my USB drive will take up to 45 minutes for the <code>.img</code> file to be expanded to it. <em>Not all USB3 drives are created equal!</em></p>
-
+</code></pre><p>In the above example, my USB drive will take up to 45 minutes for the <code>.img</code> file to be expanded to it. <em>Not all USB3 drives are created equal!</em></p>
 <ul>
-<li><strong><em>Windows Users:</em></strong> If you are using <em>Windows</em>, you can expand a bootable <code>.img</code> file to a USB drive using <a href="https://sourceforge.net/projects/win32diskimager/"><strong><em>Win32 Disk Imager</em></strong></a>. Please <strong>contact us</strong> on the Wasta-Linux forums should you have any problems.</li>
-</ul></li>
-
-<li><h2 id="boot-usb-device">Boot USB Device</h2>
-
+<li><em><strong>Windows Users:</strong></em> If you are using <em>Windows</em>, you can expand a bootable <code>.img</code> file to a USB drive using <a href="https://sourceforge.net/projects/win32diskimager/"><em><strong>Win32 Disk Imager</strong></em></a>. Please <strong>contact us</strong> on the Wasta-Linux forums should you have any problems.</li>
+</ul>
+</li>
+<li>
+<h2 id="boot-usb-device">Boot USB Device</h2>
 <p>After <code>ddrescue</code> finishes, your USB drive should be ready to boot from another machine. Use the shortcut required on your machine to select the USB drive as the boot selection.</p>
-
-<p>You can find the default disk encryption passphrase and user login password from the Download page notes.</p></li>
-
-<li><h2 id="change-default-encryption-passphrase-and-login-password">Change Default Encryption Passphrase and Login Password</h2>
-
+<p>You can find the default disk encryption passphrase and user login password from the Download page notes.</p>
+</li>
+<li>
+<h2 id="change-default-encryption-passphrase-and-login-password">Change Default Encryption Passphrase and Login Password</h2>
 <p>To change the partition encryption passphrase, use <code>Disks</code> from the <code>Main Menu</code> and select the USB device (ignore the &lsquo;Block Device&rsquo; entries). Then select the <code>LUKS</code> partition, and click the <code>gear</code> and <code>Change Passphrase...</code> as in this screenshot:</p>
-
-<p><p align="center"> <img src="../../img/tutorials/expand-usb-image/disks.png" alt="Disks" /></p>
-
+<p><img src="../../media/tutorials/expand-usb-image/disks.png" alt="Disks"></p>
 <p><strong>NOTE:</strong> The <em>passphrase</em> used to unlock the encrypted partition should <em>not</em> be confused with the <em>encryption master key</em> which is used to actually encrypt the partition. By only changing the passphrase, you will prevent typical users from being able to unlock your encrypted partition, but you will not prevent advanced Linux users from being able to unlock the partition using the <em>encryption master key</em> from a copy of the USB image. Please see [6] below to re-encrypt your partition so it is unique to your installation.</p>
-
 <p>To change the user login password, use <code>Account Details</code> from the <code>Main Menu</code> and click on the current <code>Password</code> <em>(it will be masked by dots):</em></p>
-
-<p><p align="center"> <img src="../../img/tutorials/expand-usb-image/account-details.png" alt="Account Details" /></p></li>
-
-<li><h2 id="change-usb-drive-s-encryption-master-key">Change USB Drive&rsquo;s <em>Encryption Master Key</em></h2>
-
+<p><img src="../../media/tutorials/expand-usb-image/account-details.png" alt="Account Details"></p>
+</li>
+<li>
+<h2 id="change-usb-drives-encryption-master-key">Change USB Drive&rsquo;s <em>Encryption Master Key</em></h2>
 <h3 id="optional-but-essential-for-maximum-security"><em>Optional but Essential for Maximum Security</em></h3>
-
 <p>As note above, since the USB image is shared, the same <em>encryption master key</em> is used for all copies of the USB image. This means an advanced Linux user <em>could</em> use a copy of the USB image to crack open your encrypted partition using the <em>shared encryption master key.</em></p>
-
 <p>To re-encrypt your USB partition so that it would have an <em>encryption master key</em> unique to your USB and could not be opened by the <em>shared encryption master key</em>, you will need an additional Linux system, since the partition can not be re-encrypted when it is active. <em>(Eventually an alternative that would allow you to re-encrypt the partition directly from the USB itself may be introduced.)</em></p>
-
 <ol>
-<li><h3 id="identify-the-partition-needing-to-be-re-encrypted">Identify the partition needing to be re-encrypted:</h3>
-
+<li>
+<h3 id="identify-the-partition-needing-to-be-re-encrypted">Identify the partition needing to be re-encrypted:</h3>
 <ul>
-<li><p>Boot your additional Linux system. This additional system could be a second <em>Wasta-Linux</em> USB system.</p></li>
-
-<li><p>Plug in the Wasta-Linux USB system that you want to re-encrypt. <em>Do <strong>NOT</strong> enter the passphrase to open your USB system, instead leave it in its encrypted state.</em></p></li>
-
-<li><p>Open <code>Disks</code> from the <code>Main Menu</code> and select the USB device that you want to re-encrypt (ignore the &lsquo;Block Device&rsquo; entries). Select the <code>LUKS</code> partition of the USB device. You will then be able to see the partition identifier in the details, as in this screenshot:</p></li>
+<li>
+<p>Boot your additional Linux system. This additional system could be a second <em>Wasta-Linux</em> USB system.</p>
+</li>
+<li>
+<p>Plug in the Wasta-Linux USB system that you want to re-encrypt. <em>Do <strong>NOT</strong> enter the passphrase to open your USB system, instead leave it in its encrypted state.</em></p>
+</li>
+<li>
+<p>Open <code>Disks</code> from the <code>Main Menu</code> and select the USB device that you want to re-encrypt (ignore the &lsquo;Block Device&rsquo; entries). Select the <code>LUKS</code> partition of the USB device. You will then be able to see the partition identifier in the details, as in this screenshot:</p>
+</li>
 </ul>
-
-<p><p align="center"> <img src="../../img/tutorials/expand-usb-image/partition-identifier.png" alt="Partition Identifier" /></p>
-
+<p><img src="../../media/tutorials/expand-usb-image/partition-identifier.png" alt="Partition Identifier"></p>
 <ul>
-<li><strong><em>The partition of this USB device needing to be re-encrypted is <code>/dev/sdc3</code>.</em></strong></li>
-</ul></li>
-
-<li><h3 id="run-command-to-re-encrypt-the-partition">Run command to re-encrypt the partition</h3>
-
+<li><em><strong>The partition of this USB device needing to be re-encrypted is <code>/dev/sdc3</code>.</strong></em></li>
+</ul>
+</li>
+<li>
+<h3 id="run-command-to-re-encrypt-the-partition">Run command to re-encrypt the partition</h3>
 <ul>
-<li><p><strong><em>NOTE: Data loss may occur:</em></strong> please make a backup of any important files from the USB device that you are re-encrypting. For this reason, it is recommended to re-encrypt the USB device <em>before</em> you start using it for your work.</p></li>
-
-<li><p><strong><em>Terminal * command:</em></strong></p>
-
+<li>
+<p><em><strong>NOTE: Data loss may occur:</strong></em> please make a backup of any important files from the USB device that you are re-encrypting. For this reason, it is recommended to re-encrypt the USB device <em>before</em> you start using it for your work.</p>
+</li>
+<li>
+<p><em><strong>Terminal * command:</strong></em></p>
+</li>
+</ul>
 <pre><code>sudo cryptsetup-reencrypt --progress-frequency 30 /dev/sdc3
-</code></pre></li>
-</ul>
-
-<p>Here is sample output of the <code>cryptsetup-reencrypt</code> process running:</p>
-
+</code></pre><p>Here is sample output of the <code>cryptsetup-reencrypt</code> process running:</p>
 <pre><code>$ sudo cryptsetup-reencrypt --progress-frequency 30 /dev/sdc3
 Enter passphrase for key slot 0: 
 Progress:   3.3%, ETA 14:32, 1908 MiB written, speed  63.6 MiB/s
@@ -251,16 +225,14 @@ Progress:   5.7%, ETA 25:10, 3252 MiB written, speed  35.9 MiB/s
 Progress:   6.6%, ETA 28:32, 3784 MiB written, speed  31.3 MiB/s
 Progress:   7.5%, ETA 30:49, 4332 MiB written, speed  28.7 MiB/s
 Progress:   8.5%, ETA 32:25, 4884 MiB written, speed  27.0 MiB/s
-</code></pre>
-
-<ul>
-<li><strong><em>NOTE:</em></strong> this re-encrypt process may take up to 2 hours to complete, depending on the speed of your main system and the speed of your USB device. In the above sample output note that the ETA keeps rising (!) due to the slower USB drive used. Approximately 50 minutes were needed to re-encrypt this USB drive.</li>
-</ul></li>
-</ol></li>
+</code></pre><ul>
+<li><em><strong>NOTE:</strong></em> this re-encrypt process may take up to 2 hours to complete, depending on the speed of your main system and the speed of your USB device. In the above sample output note that the ETA keeps rising (!) due to the slower USB drive used. Approximately 50 minutes were needed to re-encrypt this USB drive.</li>
+</ul>
+</li>
 </ol>
-
-<hr />
-
+</li>
+</ol>
+<hr>
 <p><strong>*</strong> <em>To open the Terminal, in Wasta-Linux go to <code>Menu &gt; Administration &gt; Terminal</code>, or press the following keys at the same time: <code>Ctrl + Alt + T</code></em></p>
 </article>
 
@@ -279,23 +251,21 @@ Progress:   8.5%, ETA 32:25, 4884 MiB written, speed  27.0 MiB/s
 
   <aside class="book-toc level-true fixed">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#wasta-linux-expand-image-to-a-usb-drive">Wasta-Linux: Expand Image to a USB Drive</a>
-<ul>
-<li><a href="#download-wasta-linux-bootable-usb-image">Download Wasta-Linux Bootable USB Image</a></li>
-<li><a href="#decompress-image-file">Decompress Image file</a></li>
-<li><a href="#insert-and-identify-usb-drive-root">Insert and Identify USB Drive Root</a></li>
-<li><a href="#expand-image-to-usb-drive">Expand Image to USB Drive</a></li>
-<li><a href="#boot-usb-device">Boot USB Device</a></li>
-<li><a href="#change-default-encryption-passphrase-and-login-password">Change Default Encryption Passphrase and Login Password</a></li>
-<li><a href="#change-usb-drive-s-encryption-master-key">Change USB Drive&rsquo;s <em>Encryption Master Key</em></a>
-<ul>
-<li><a href="#optional-but-essential-for-maximum-security"><em>Optional but Essential for Maximum Security</em></a></li>
-<li><a href="#identify-the-partition-needing-to-be-re-encrypted">Identify the partition needing to be re-encrypted:</a></li>
-<li><a href="#run-command-to-re-encrypt-the-partition">Run command to re-encrypt the partition</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#download-wasta-linux-bootable-usb-image">Download Wasta-Linux Bootable USB Image</a></li>
+    <li><a href="#decompress-image-file">Decompress Image file</a></li>
+    <li><a href="#insert-and-identify-usb-drive-root">Insert and Identify USB Drive Root</a></li>
+    <li><a href="#expand-image-to-usb-drive">Expand Image to USB Drive</a></li>
+    <li><a href="#boot-usb-device">Boot USB Device</a></li>
+    <li><a href="#change-default-encryption-passphrase-and-login-password">Change Default Encryption Passphrase and Login Password</a></li>
+    <li><a href="#change-usb-drives-encryption-master-key">Change USB Drive&rsquo;s <em>Encryption Master Key</em></a>
+      <ul>
+        <li><a href="#optional-but-essential-for-maximum-security"><em>Optional but Essential for Maximum Security</em></a></li>
+        <li><a href="#identify-the-partition-needing-to-be-re-encrypted">Identify the partition needing to be re-encrypted:</a></li>
+        <li><a href="#run-command-to-re-encrypt-the-partition">Run command to re-encrypt the partition</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </aside>
 
@@ -308,5 +278,5 @@ Progress:   8.5%, ETA 32:25, 4884 MiB written, speed  27.0 MiB/s
 </body>
 
 
-<!-- Mirrored from www.wastalinux.org/tutorials/expand-usb-image/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Mar 2020 06:33:49 GMT -->
+<!-- Mirrored from www.wastalinux.org/tutorials/expand-usb-image/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:15:06 GMT -->
 </html>

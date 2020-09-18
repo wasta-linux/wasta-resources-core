@@ -2,17 +2,17 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.wastalinux.org/tutorials/create-bootable-usb/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Mar 2020 06:33:52 GMT -->
+<!-- Mirrored from www.wastalinux.org/tutorials/create-bootable-usb/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:15:08 GMT -->
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Create Bootable USB | wasta [Linux]</title>
 
 
-<link rel="stylesheet" href="../../book.min.17ae4652bd42389d5b51ecea8de95e9867d6aa91aa6c938402769269b484ca28.css">
+<link rel="stylesheet" href="../../book.min.12687d6b2f9c17ec42179e86623848c3091e7f3962c936ff8555e2e41a1a9815.css">
 
 
-<script defer src="../../search.min.769b5a155d9478b50c32daadbdf616a80a38ec9e5db9854301794538c03428b0.js"></script>
+<script defer src="../../search.min.c5db3cb65423fb36985e4f6524996c886fbb096d98fdf834ba0d56cf06e6e252.js"></script>
 
 
 
@@ -35,7 +35,7 @@ https://github.com/wasta-linux/book-wasta
       <nav>
 <h1 class="book-brand" align="center">
   <a href="../../index.html"><img src="../../img/site-logo-64.png" alt="Logo"></a>
-<br>wasta [Linux]
+wasta [Linux]
 </h1>
 
 
@@ -62,22 +62,23 @@ https://github.com/wasta-linux/book-wasta
 
 <ul>
 <li><a href="../../index.html"><strong>Wasta-Linux: Home</strong></a>
-
 <ul>
 <li><a href="../../home/faq/index.html">Frequently Asked Questions</a></li>
 <li><a href="../../home/download/index.html">Download</a></li>
 <li><a href="../../home/ubuntu-migration/index.html">Migrating from Ubuntu</a></li>
 <li><a href="../../home/customizing/index.html">Customizing</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href="../../wasta-apps/index.html"><strong>Wasta Apps</strong></a>
-
 <ul>
 <li><a href="../../wasta-apps/wasta-backup/index.html">Wasta-Backup</a></li>
 <li><a href="../../wasta-apps/wasta-offline/index.html">Wasta-Offline</a></li>
 <li><a href="../../wasta-apps/cinnamon-layout/index.html">Cinnamon-Layout</a></li>
+<li><a href="../../wasta-apps/wasta-snap-manager/index.html">Wasta-Snap-Manager</a></li>
 <li><a href="../../wasta-apps/wasta-menus/index.html">Wasta-Menus</a></li>
 <li><a href="../../wasta-apps/wasta-resources/index.html">Wasta-Resources</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href="../index.html"><strong>Tutorials</strong></a></li>
 <li><a href="../../home/why-linux/index.html"><strong>Why Linux?</strong></a></li>
 </ul>
@@ -114,41 +115,25 @@ https://github.com/wasta-linux/book-wasta
     <img src="../../svg/menu.svg" alt="Menu" />
   </label>
   &nbsp;&nbsp;&nbsp;
-  <img src="../../img/site-logo-32.png" alt="Logo" />
+  <a href="../../index.html"><img src="../../img/site-logo-32.png" alt="Logo" style="margin-left: 0; margin-right: 0;"/></a>
   &nbsp; wasta [Linux]
 </h2>
 
       
-<article class="markdown">
-
-<p><p align="center"> <img src="../../img/wasta-linux-round-128.png" alt="Wasta-Linux" /></p>
-
+<article class="markdown"><p><img src="../../media/wasta-linux-round-128.png" alt="Wasta-Linux"></p>
 <h1 id="how-to-create-a-bootable-usb-from-an-iso-image">How to create a bootable USB from an ISO Image</h1>
-
 <h2 id="using-windows">Using Windows</h2>
-
 <p><strong>For Windows users</strong>, the preferred tool to create a bootable USB device from an ISO Image is <a href="https://rufus.akeo.ie/">Rufus</a>. Rufus has the advantage of not needing to be &ldquo;installed&rdquo;: a user can run it directly from the downloaded &ldquo;.exe file&rdquo;.</p>
-
 <p>To use Rufus, first insert a 4GB (or greater) USB drive (WARNING! using the Rufus default settings, this USB drive WILL BE COMPLETELY REFORMATTED, so all data WILL BE LOST!).</p>
-
 <p>Then, start Rufus.  It should auto-detect the USB device and look similar to this:</p>
-
-<p><p align="center"> <img src="../../img/tutorials/create-bootable-usb/Rufus-1.jpg" alt="Rufus" /></p>
-
+<p><img src="../../media/tutorials/create-bootable-usb/Rufus-1.jpg" alt="Rufus"></p>
 <p>Keep all the default settings, and click the CD icon (seen in the above screen shot) and navigate to the Wasta-Linux ISO you downloaded.  After you select the Wasta-Linux ISO, Rufus should look like this:</p>
-
-<p><p align="center"> <img src="../../img/tutorials/create-bootable-usb/Rufus-2.jpg" alt="Rufus Ready to Install" /></p>
-
+<p><img src="../../media/tutorials/create-bootable-usb/Rufus-2.jpg" alt="Rufus Ready to Install"></p>
 <p>Click &ldquo;Start&rdquo;, and, after completing, your bootable Wasta-Linux USB stick should be ready!</p>
-
 <p>After booting the machine you want to install Wasta-Linux on from the created USB device, if the installer has been set up correctly you should see the following boot menu:</p>
-
-<p><p align="center"> <img src="../../img/tutorials/create-bootable-usb/wasta-linux-boot.png" alt="USB Live Boot" /></p>
-
+<p><img src="../../media/tutorials/create-bootable-usb/wasta-linux-boot.png" alt="USB Live Boot"></p>
 <p>Please use the first boot option &ldquo;live - boot the Live System&rdquo; even if you are ready to install.  Once the Live System is booted, you can click the icon on the desktop to begin the Wasta-Linux installation.</p>
-
 <h2 id="using-linux">Using Linux</h2>
-
 <p><strong>For Linux users</strong>, in order to make a UEFI and &ldquo;Legacy&rdquo; compatible &ldquo;read only&rdquo; USB installer drive use the &ldquo;Startup Disk Creator&rdquo; from Ubuntu or Wasta-Linux. Alternatively a simple terminal utility named &ldquo;mkusb-nox&rdquo;, which is pre-installed in Wasta-Linux 16.04+, works well.</p>
 </article>
 
@@ -174,5 +159,5 @@ https://github.com/wasta-linux/book-wasta
 </body>
 
 
-<!-- Mirrored from www.wastalinux.org/tutorials/create-bootable-usb/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Mar 2020 06:33:52 GMT -->
+<!-- Mirrored from www.wastalinux.org/tutorials/create-bootable-usb/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:15:12 GMT -->
 </html>
