@@ -2,17 +2,17 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.wastalinux.org/home/customizing/maintain-package/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:15:28 GMT -->
+<!-- Mirrored from www.wastalinux.org/home/customizing/maintain-package/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:35:19 GMT -->
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maintain a Custom Package | wasta [Linux]</title>
 
 
-<link rel="stylesheet" href="../../../book.min.12687d6b2f9c17ec42179e86623848c3091e7f3962c936ff8555e2e41a1a9815.css">
+<link rel="stylesheet" href="../../../book.min.2e6ad64739c973e2832d84e6d099cddfdb3102d354c3f03b4b685b858d822167.css">
 
 
-<script defer src="../../../search.min.c5db3cb65423fb36985e4f6524996c886fbb096d98fdf834ba0d56cf06e6e252.js"></script>
+<script defer src="../../../search.min.469a40d1bdb09755ec2ad4f1200d0bcb34bdf153e26e05ad179441ad0e26f719.js"></script>
 
 
 
@@ -72,11 +72,12 @@ wasta [Linux]
 <li><a href="../../../wasta-apps/index.html"><strong>Wasta Apps</strong></a>
 <ul>
 <li><a href="../../../wasta-apps/wasta-backup/index.html">Wasta-Backup</a></li>
-<li><a href="../../../wasta-apps/wasta-offline/index.html">Wasta-Offline</a></li>
-<li><a href="../../../wasta-apps/cinnamon-layout/index.html">Cinnamon-Layout</a></li>
-<li><a href="../../../wasta-apps/wasta-snap-manager/index.html">Wasta-Snap-Manager</a></li>
-<li><a href="../../../wasta-apps/wasta-menus/index.html">Wasta-Menus</a></li>
+<li><a href="../../../wasta-apps/traffic-cop/index.html">Traffic-Cop</a></li>
 <li><a href="../../../wasta-apps/wasta-resources/index.html">Wasta-Resources</a></li>
+<li><a href="../../../wasta-apps/cinnamon-layout/index.html">Cinnamon-Layout</a></li>
+<li><a href="../../../wasta-apps/wasta-menus/index.html">Wasta-Menus</a></li>
+<li><a href="../../../wasta-apps/wasta-offline/index.html">Wasta-Offline</a></li>
+<li><a href="../../../wasta-apps/wasta-snap-manager/index.html">Wasta-Snap-Manager</a></li>
 </ul>
 </li>
 <li><a href="../../../tutorials/index.html"><strong>Tutorials</strong></a></li>
@@ -141,7 +142,7 @@ wasta [Linux]
 <ul>
 <li>
 <p><em><strong>Terminal * command:</strong></em></p>
-<pre><code>sudo apt-get install build-essential devscripts dh-make dpkg-dev git
+<pre tabindex="0"><code>sudo apt-get install build-essential devscripts dh-make dpkg-dev git
 </code></pre></li>
 </ul>
 </li>
@@ -150,8 +151,8 @@ wasta [Linux]
 <p>Git is used for version control so will need to be configured so that any changes you make will correctly be linked to your id.</p>
 <ul>
 <li><em><strong>Terminal * commands:</strong></em> <em>(execute commands 1 at a time)</em>
-<pre><code>git config --global user.email &quot;you@example.com&quot;
-git config --global user.name &quot;Your Name&quot;
+<pre tabindex="0"><code>git config --global user.email &#34;you@example.com&#34;
+git config --global user.name &#34;Your Name&#34;
 </code></pre></li>
 </ul>
 </li>
@@ -161,14 +162,14 @@ git config --global user.name &quot;Your Name&quot;
 <ul>
 <li>
 <p><em><strong>Terminal * command:</strong></em></p>
-<pre><code>echo 'export DEBFULLNAME=Your\ Name' &gt;&gt; ~/.profile
+<pre tabindex="0"><code>echo &#39;export DEBFULLNAME=Your\ Name&#39; &gt;&gt; ~/.profile
 </code></pre><ul>
 <li><em><strong>NOTE:</strong></em> the <code>\</code> delimiter is needed to account for the space in the name (between <code>Your</code> and <code>Name</code> in this example)</li>
 </ul>
 </li>
 <li>
 <p><em><strong>Terminal * command:</strong></em></p>
-<pre><code>echo 'export DEBEMAIL=you@example.com' &gt;&gt; ~/.profile
+<pre tabindex="0"><code>echo &#39;export DEBEMAIL=you@example.com&#39; &gt;&gt; ~/.profile
 </code></pre><ul>
 <li><em><strong>NOTE:</strong></em> the user name and email address should match those used in step <strong>&ldquo;1.c&rdquo;</strong> above.</li>
 </ul>
@@ -217,10 +218,10 @@ git config --global user.name &quot;Your Name&quot;
 <ul>
 <li>Right click on the <code>wasta-packages</code> folder created in step <strong>&ldquo;1.f&rdquo;</strong> above and choose &ldquo;Open in Terminal&rdquo;</li>
 <li><em><strong>Terminal * command:</strong></em>
-<pre><code>git clone &lt;pasted contents from your clipboard&gt;
+<pre tabindex="0"><code>git clone &lt;pasted contents from your clipboard&gt;
 </code></pre></li>
 <li><em><strong>Example:</strong></em>
-<pre><code>git clone git@github.com:wasta-linux/wasta-custom-eth.git
+<pre tabindex="0"><code>git clone git@github.com:wasta-linux/wasta-custom-eth.git
 </code></pre></li>
 </ul>
 <p>The &ldquo;wasta-custom-eth&rdquo; folder containing the current source code will now exist in your &ldquo;wasta-packages&rdquo; folder.</p>
@@ -232,7 +233,7 @@ git config --global user.name &quot;Your Name&quot;
 <p>Right click on the &ldquo;wasta-packages/wasta-custom-eth&rdquo; folder and choose &ldquo;Open in Terminal&rdquo;</p>
 <ul>
 <li><em><strong>Terminal * command:</strong></em>
-<pre><code>git pull
+<pre tabindex="0"><code>git pull
 </code></pre></li>
 </ul>
 </li>
@@ -265,7 +266,7 @@ git config --global user.name &quot;Your Name&quot;
 <p>Use <code>dch</code> to create the new version and enter comments regarding what changes you will make</p>
 <ul>
 <li><em><strong>Terminal * command:</strong></em>
-<pre><code>dch --newversion 0.1.5
+<pre tabindex="0"><code>dch --newversion 0.1.5
 </code></pre><ul>
 <li>
 <p>Replace <code>0.1.5</code> with your new version</p>
@@ -302,7 +303,7 @@ git config --global user.name &quot;Your Name&quot;
 <h2 id="build-local-test-version">Build local test version</h2>
 <ul>
 <li><em><strong>Terminal * command:</strong></em>
-<pre><code>debuild -b
+<pre tabindex="0"><code>debuild -b
 </code></pre><ul>
 <li>
 <p>Builds a &ldquo;.deb&rdquo; package file for local testing</p>
@@ -323,7 +324,7 @@ git config --global user.name &quot;Your Name&quot;
 <p>The following &ldquo;warnings&rdquo; can be ignored:</p>
 <ul>
 <li><em><strong>Terminal output:</strong></em>
-<pre><code>dpkg-gencontrol: warning: Depends field of package wasta-custom-eth: unknown substitution variable ${shlibs:Depends}
+<pre tabindex="0"><code>dpkg-gencontrol: warning: Depends field of package wasta-custom-eth: unknown substitution variable ${shlibs:Depends}
 </code></pre></li>
 </ul>
 </li>
@@ -349,7 +350,7 @@ git config --global user.name &quot;Your Name&quot;
 <p>The <code>debuild -b</code> process from step 4 above creates some temporary build files that we don&rsquo;t want to keep. Clean them up! <em><strong>This is important or else the next step to add files to git will add these temporary files, which we don&rsquo;t want.</strong></em></p>
 <ul>
 <li><em><strong>Terminal * command:</strong></em>
-<pre><code>debclean
+<pre tabindex="0"><code>debclean
 </code></pre></li>
 </ul>
 </li>
@@ -362,7 +363,7 @@ git config --global user.name &quot;Your Name&quot;
 </li>
 <li>
 <p><em><strong>Terminal * command:</strong></em></p>
-<pre><code>git add --all
+<pre tabindex="0"><code>git add --all
 </code></pre></li>
 <li>
 <p>All files in the <code>wasta-custom-xyz</code> folder not already part of git version control will be added to it</p>
@@ -374,7 +375,7 @@ git config --global user.name &quot;Your Name&quot;
 <p>(can be done at any time)</p>
 <ul>
 <li><em><strong>Terminal * command:</strong></em>
-<pre><code>git status
+<pre tabindex="0"><code>git status
 </code></pre></li>
 </ul>
 </li>
@@ -384,11 +385,11 @@ git config --global user.name &quot;Your Name&quot;
 <ul>
 <li>
 <p><em><strong>Terminal * command:</strong></em></p>
-<pre><code>git commit -am &quot;&lt;short commit message&gt;&quot;
+<pre tabindex="0"><code>git commit -am &#34;&lt;short commit message&gt;&#34;
 </code></pre><ul>
 <li><em><strong>Example:</strong></em></li>
 </ul>
-<pre><code>git commit -am &quot;Adding LibreOffice Extension&quot;
+<pre tabindex="0"><code>git commit -am &#34;Adding LibreOffice Extension&#34;
 </code></pre></li>
 </ul>
 </li>
@@ -397,7 +398,7 @@ git config --global user.name &quot;Your Name&quot;
 <p>Pushing changes will transfer the git commits / updates to GitHub.</p>
 <ul>
 <li><em><strong>Terminal * command:</strong></em>
-<pre><code>git push
+<pre tabindex="0"><code>git push
 </code></pre></li>
 </ul>
 </li>
@@ -436,7 +437,7 @@ git config --global user.name &quot;Your Name&quot;
 <p>Ensure you have the Wasta-Linux Testing PPA added to your system</p>
 <ul>
 <li><em><strong>Terminal * command:</strong></em>
-<pre><code>sudo add-apt-repository ppa:wasta-linux/wasta-testing
+<pre tabindex="0"><code>sudo add-apt-repository ppa:wasta-linux/wasta-testing
 </code></pre></li>
 </ul>
 </li>
@@ -444,7 +445,7 @@ git config --global user.name &quot;Your Name&quot;
 <h4 id="update-your-package-lists">Update your package lists</h4>
 <ul>
 <li><em><strong>Terminal * command:</strong></em>
-<pre><code>sudo apt-get update
+<pre tabindex="0"><code>sudo apt-get update
 </code></pre></li>
 </ul>
 </li>
@@ -452,7 +453,7 @@ git config --global user.name &quot;Your Name&quot;
 <h4 id="install-test-package">Install test package</h4>
 <ul>
 <li><em><strong>Terminal * command:</strong></em>
-<pre><code>sudo apt-get install wasta-custom-xyz
+<pre tabindex="0"><code>sudo apt-get install wasta-custom-xyz
 </code></pre></li>
 </ul>
 </li>
@@ -495,5 +496,5 @@ git config --global user.name &quot;Your Name&quot;
 </body>
 
 
-<!-- Mirrored from www.wastalinux.org/home/customizing/maintain-package/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:15:33 GMT -->
+<!-- Mirrored from www.wastalinux.org/home/customizing/maintain-package/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:35:21 GMT -->
 </html>

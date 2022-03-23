@@ -4,11 +4,7 @@
     <title>Wasta Applications on wasta [Linux]</title>
     <link>http://www.wastalinux.org/wasta-apps/</link>
     <description>Recent content in Wasta Applications on wasta [Linux]</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="http://www.wastalinux.org/wasta-apps/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://www.wastalinux.org/wasta-apps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cinnamon-Layout</title>
       <link>http://www.wastalinux.org/wasta-apps/cinnamon-layout/</link>
@@ -21,12 +17,21 @@ Simply select the desired layout and click OK.</description>
     </item>
     
     <item>
+      <title>Traffic Cop</title>
+      <link>http://www.wastalinux.org/wasta-apps/traffic-cop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.wastalinux.org/wasta-apps/traffic-cop/</guid>
+      <description>Traffic Cop: Manage bandwidth usage by app or process Features  Set priority, upload bandwidth, and/or download bandwidth for the whole system or for any process. See current config (displayed in &amp;ldquo;B/s&amp;rdquo; regardless of unit used in the config file). See live upload and download rates globally and for each managed process. Default config provided that covers common use cases.  Limitations Traffic Cop relies on nethogs to track network usage.</description>
+    </item>
+    
+    <item>
       <title>Wasta-Backup</title>
       <link>http://www.wastalinux.org/wasta-apps/wasta-backup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.wastalinux.org/wasta-apps/wasta-backup/</guid>
-      <description>Wasta-Backup: Simple Version-Backup Program What is it? Wasta-Backup is a simple Linux backup program for version-backups of data to an external USB device. In other words, it is an easy way to back up important files, and it keeps older versions of the files in case they are needed again.
+      <description>Wasta-Backup: Simple Version-Backups What is it? Wasta-Backup is a simple Linux backup program for version-backups of data to an external USB device. In other words, it is an easy way to back up important files, and it keeps older versions of the files in case they are needed again.
 If you want to know more, Wasta-Backup is a simple graphical interface for rdiff-backup, which is a solid, reputable, and reliable command-line-only backup program.</description>
     </item>
     

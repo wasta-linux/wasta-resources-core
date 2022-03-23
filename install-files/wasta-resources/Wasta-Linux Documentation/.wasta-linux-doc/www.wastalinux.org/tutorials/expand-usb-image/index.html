@@ -2,17 +2,17 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.wastalinux.org/tutorials/expand-usb-image/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:15:01 GMT -->
+<!-- Mirrored from www.wastalinux.org/tutorials/expand-usb-image/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:35:13 GMT -->
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Expand Image to USB Drive | wasta [Linux]</title>
 
 
-<link rel="stylesheet" href="../../book.min.12687d6b2f9c17ec42179e86623848c3091e7f3962c936ff8555e2e41a1a9815.css">
+<link rel="stylesheet" href="../../book.min.2e6ad64739c973e2832d84e6d099cddfdb3102d354c3f03b4b685b858d822167.css">
 
 
-<script defer src="../../search.min.c5db3cb65423fb36985e4f6524996c886fbb096d98fdf834ba0d56cf06e6e252.js"></script>
+<script defer src="../../search.min.469a40d1bdb09755ec2ad4f1200d0bcb34bdf153e26e05ad179441ad0e26f719.js"></script>
 
 
 
@@ -72,11 +72,12 @@ wasta [Linux]
 <li><a href="../../wasta-apps/index.html"><strong>Wasta Apps</strong></a>
 <ul>
 <li><a href="../../wasta-apps/wasta-backup/index.html">Wasta-Backup</a></li>
-<li><a href="../../wasta-apps/wasta-offline/index.html">Wasta-Offline</a></li>
-<li><a href="../../wasta-apps/cinnamon-layout/index.html">Cinnamon-Layout</a></li>
-<li><a href="../../wasta-apps/wasta-snap-manager/index.html">Wasta-Snap-Manager</a></li>
-<li><a href="../../wasta-apps/wasta-menus/index.html">Wasta-Menus</a></li>
+<li><a href="../../wasta-apps/traffic-cop/index.html">Traffic-Cop</a></li>
 <li><a href="../../wasta-apps/wasta-resources/index.html">Wasta-Resources</a></li>
+<li><a href="../../wasta-apps/cinnamon-layout/index.html">Cinnamon-Layout</a></li>
+<li><a href="../../wasta-apps/wasta-menus/index.html">Wasta-Menus</a></li>
+<li><a href="../../wasta-apps/wasta-offline/index.html">Wasta-Offline</a></li>
+<li><a href="../../wasta-apps/wasta-snap-manager/index.html">Wasta-Snap-Manager</a></li>
 </ul>
 </li>
 <li><a href="../index.html"><strong>Tutorials</strong></a></li>
@@ -150,10 +151,10 @@ wasta [Linux]
 <li>
 <h2 id="expand-image-to-usb-drive">Expand Image to USB Drive</h2>
 <p>The most simple and least error-prone way to expand the image file to the USB drive is to use <code>ddrescue</code> (preinstalled in <em>Wasta-Linux</em>) in the terminal. In an empty space of your folder with the <code>.img</code> file in it, right-click and choose <code>Open in Terminal</code> and proceed with the below command:</p>
-<pre><code>sudo ddrescue --force ./wasta-bt-2019-11-22.img /dev/sdd
+<pre tabindex="0"><code>sudo ddrescue --force ./wasta-bt-2019-11-22.img /dev/sdd
 </code></pre><p>Note that <code>--force</code> is needed since it will overwrite the existing data on the USB drive. Again make sure from <code>Step 3</code> that you have identified your USB drive correctly!</p>
 <p><code>ddrescue</code> does a nice job of giving feedback on how much time is remaining. Since the <code>.img</code> file is 60+ GB in size, it will take some time!</p>
-<pre><code>$ sudo ddrescue --force ./wasta-bt-2019-11-22.img /dev/sdd
+<pre tabindex="0"><code>$ sudo ddrescue --force ./wasta-bt-2019-11-22.img /dev/sdd
 [sudo] password for rik:
 GNU ddrescue 1.22
      ipos:    2310 MB, non-trimmed:     0 B,  current rate:  23789 kB/s
@@ -215,9 +216,9 @@ Copying non-tried blocks... Pass 1 (forwards)
 <p><em><strong>Terminal * command:</strong></em></p>
 </li>
 </ul>
-<pre><code>sudo cryptsetup-reencrypt --progress-frequency 30 /dev/sdc3
+<pre tabindex="0"><code>sudo cryptsetup-reencrypt --progress-frequency 30 /dev/sdc3
 </code></pre><p>Here is sample output of the <code>cryptsetup-reencrypt</code> process running:</p>
-<pre><code>$ sudo cryptsetup-reencrypt --progress-frequency 30 /dev/sdc3
+<pre tabindex="0"><code>$ sudo cryptsetup-reencrypt --progress-frequency 30 /dev/sdc3
 Enter passphrase for key slot 0: 
 Progress:   3.3%, ETA 14:32, 1908 MiB written, speed  63.6 MiB/s
 Progress:   4.7%, ETA 20:16, 2712 MiB written, speed  45.0 MiB/s
@@ -278,5 +279,5 @@ Progress:   8.5%, ETA 32:25, 4884 MiB written, speed  27.0 MiB/s
 </body>
 
 
-<!-- Mirrored from www.wastalinux.org/tutorials/expand-usb-image/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:15:06 GMT -->
+<!-- Mirrored from www.wastalinux.org/tutorials/expand-usb-image/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:35:13 GMT -->
 </html>

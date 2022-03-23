@@ -1,3 +1,9 @@
+wasta-resources-core (2.2.5) focal; urgency=medium
+
+  * re-sync'd from wastalinux.org
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Wed, 23 Mar 2022 10:37:09 -0500
+
 wasta-resources-core (2.2.4) focal; urgency=medium
 
   * re-sync'd from wastalinux.org

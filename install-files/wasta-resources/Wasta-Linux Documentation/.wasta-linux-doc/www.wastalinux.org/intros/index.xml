@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intros on wasta [Linux]</title>
+    <link>http://www.wastalinux.org/intros/</link>
+    <description>Recent content in Intros on wasta [Linux]</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://www.wastalinux.org/intros/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to Files app</title>
+      <link>http://www.wastalinux.org/intros/files-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.wastalinux.org/intros/files-app/</guid>
+      <description>Introduction to Files app Browse and manage computer files and folders         Your browser does not support the video element.      Other Features  Special actions for certain file types in the right-click menu. Connect to network drives.  </description>
+    </item>
+    
+    <item>
+      <title>Intro to Software Manager</title>
+      <link>http://www.wastalinux.org/intros/software-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.wastalinux.org/intros/software-manager/</guid>
+      <description>Introduction to Software Manager App installation         Your browser does not support the video element.      App Removal         Your browser does not support the video element.      </description>
+    </item>
+    
+    <item>
+      <title>Intro to System Monitor</title>
+      <link>http://www.wastalinux.org/intros/system-monitor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.wastalinux.org/intros/system-monitor/</guid>
+      <description>Introduction to System Monitor Basic Usage  See running processes. See live memory, CPU, and network usage. See file system status.          Your browser does not support the video element.      Other Features  Stop a misbehaving process. Filter output using the search field. Change visible columns.  </description>
+    </item>
+    
+  </channel>
+</rss>

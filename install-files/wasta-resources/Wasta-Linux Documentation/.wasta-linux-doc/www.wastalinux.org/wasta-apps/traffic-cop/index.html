@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.wastalinux.org/wasta-apps/traffic-cop/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:34:42 GMT -->
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traffic Cop | wasta [Linux]</title>
+
+
+<link rel="stylesheet" href="../../book.min.2e6ad64739c973e2832d84e6d099cddfdb3102d354c3f03b4b685b858d822167.css">
+
+
+<script defer src="../../search.min.469a40d1bdb09755ec2ad4f1200d0bcb34bdf153e26e05ad179441ad0e26f719.js"></script>
+
+
+
+<link rel="icon" href="../../favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Wasta Theme
+https://github.com/wasta-linux/book-wasta
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h1 class="book-brand" align="center">
+  <a href="../../index.html"><img src="../../img/site-logo-64.png" alt="Logo"></a>
+wasta [Linux]
+</h1>
+
+
+<div class="book-search">
+  <input type="text" placeholder="Search" id="book-search-input" maxlength="64" readonly />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2fwasta-apps\2ftraffic-cop\2f "] {
+      color: #383c4a;
+  }
+  </style>
+
+<ul>
+<li><a href="../../index.html"><strong>Wasta-Linux: Home</strong></a>
+<ul>
+<li><a href="../../home/faq/index.html">Frequently Asked Questions</a></li>
+<li><a href="../../home/download/index.html">Download</a></li>
+<li><a href="../../home/ubuntu-migration/index.html">Migrating from Ubuntu</a></li>
+<li><a href="../../home/customizing/index.html">Customizing</a></li>
+</ul>
+</li>
+<li><a href="../index.html"><strong>Wasta Apps</strong></a>
+<ul>
+<li><a href="../wasta-backup/index.html">Wasta-Backup</a></li>
+<li><a href="index.html">Traffic-Cop</a></li>
+<li><a href="../wasta-resources/index.html">Wasta-Resources</a></li>
+<li><a href="../cinnamon-layout/index.html">Cinnamon-Layout</a></li>
+<li><a href="../wasta-menus/index.html">Wasta-Menus</a></li>
+<li><a href="../wasta-offline/index.html">Wasta-Offline</a></li>
+<li><a href="../wasta-snap-manager/index.html">Wasta-Snap-Manager</a></li>
+</ul>
+</li>
+<li><a href="../../tutorials/index.html"><strong>Tutorials</strong></a></li>
+<li><a href="../../home/why-linux/index.html"><strong>Why Linux?</strong></a></li>
+</ul>
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center book-header">
+  <label for="menu-control">
+    <img src="../../svg/menu.svg" alt="Menu" />
+  </label>
+</header>
+<h2 class="flex align-center book-header-show">
+  <label for="menu-control">
+    <img src="../../svg/menu.svg" alt="Menu" />
+  </label>
+  &nbsp;&nbsp;&nbsp;
+  <a href="../../index.html"><img src="../../img/site-logo-32.png" alt="Logo" style="margin-left: 0; margin-right: 0;"/></a>
+  &nbsp; wasta [Linux]
+</h2>
+
+      
+<article class="markdown"><p><img src="../../media/wasta-apps/traffic-cop/traffic-cop.png" alt="Traffic Cop"></p>
+<h1 id="traffic-cop-manage-bandwidth-usage-by-app-or-process">Traffic Cop: Manage bandwidth usage by app or process</h1>
+<h2 id="features">Features</h2>
+<ul>
+<li>Set priority, upload bandwidth, and/or download bandwidth for the whole system or for any process.</li>
+<li>See current config (displayed in &ldquo;B/s&rdquo; regardless of unit used in the config file).</li>
+<li>See live upload and download rates globally and for each managed process.</li>
+<li>Default config provided that covers common use cases.</li>
+</ul>
+<p><img src="../../media/wasta-apps/traffic-cop/traffic-cop-window.png" alt="Traffic Cop window"></p>
+<h2 id="limitations">Limitations</h2>
+<p>Traffic Cop relies on <strong><a href="https://github.com/raboof/nethogs">nethogs</a></strong> to track network usage. As of version 0.8.5-2 (default in Wasta 20.04), <strong>nethogs</strong> does not track UDP packets, which are used by many VoIP apps, including <strong>Zoom</strong> and <strong>Skype</strong>, and thus <strong>Traffic Cop</strong> also doesn&rsquo;t show reliable upload and download rates for UDP traffic. However, <strong>Traffic Cop</strong>, <em>does</em> properly manage this UDP traffic. You can confirm it for yourself if you have a pay-per-MB internet plan and check the counter provided by your ISP periodically during a call to verify that the rate you&rsquo;ve set is being properly applied.</p>
+<h2 id="more-information">More information</h2>
+<p>Traffic Cop manages bandwidth usage via a systemd service by:</p>
+<ul>
+<li>managing traffic over the device that is currently connected to the internet</li>
+<li>setting global download and upload bandwidth limits</li>
+<li>setting per-process bandwidth limits</li>
+<li>prioritizing processes</li>
+</ul>
+<h3 id="use-cases">Use cases</h3>
+<ul>
+<li>Use the <em>bandwidth limits</em> if you pay for data by the MB; e.g. you don&rsquo;t want your audio or video calls to use more data than they absolutely need.</li>
+<li>Use <em>prioritization</em> if your available bandwidth is limited; e.g. you want to ensure that your audio calls go through, even if you&rsquo;re also downloading updates.</li>
+</ul>
+<h3 id="modifying-the-default-bandwidth-management-configuration">Modifying the default bandwidth management configuration</h3>
+<p>The <a href="https://github.com/wasta-linux/traffic-cop/data/traffic-cop.yaml.default">default config</a> limits several processes known to use a significant amount of bandwidth and gives some explanatory info on how to tailor it to your needs. It is found at <a href="https://github.com/wasta-linux/traffic-cop/data/traffic-cop.yaml.default">/usr/share/traffic-cop/traffic-cop.yaml</a> and is copied to /etc/traffic-cop.yaml on first run if it doesn&rsquo;t already exist.
+The config can be edited using the &ldquo;Edit&hellip;&rdquo; button in the app window, or, for those who love the terminal, by opening it with a terminal text editor such as nano using elevated privileges, e.g.:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo nano /etc/traffic-cop.yaml
+</span></span></code></pre></div><p>This file is not overwritten during installation or update, so any changes you make are preserved.</p>
+<p><em><strong>More info can be found in the Traffic Cop repository&rsquo;s <a href="https://github.com/wasta-linux/traffic-cop/">README.md</a> file.</strong></em></p>
+<h2 id="about">About</h2>
+<p><strong>Traffic Cop</strong> is based on the <a href="https://github.com/cryzed/TrafficToll">TrafficToll</a> python3 package developed by <a href="https://github.com/cryzed">cryzed</a>, but it&rsquo;s built as a debian package and modified to run as a systemd service.</p>
+<p>It&rsquo;s composed of 4 parts:</p>
+<ul>
+<li>The traffictoll python3 package whose executable is installed at /usr/bin/tt.</li>
+<li>A config file installed at /etc/traffic-cop.yaml.</li>
+<li>A wrapper script installed at /usr/bin/tt-wrapper that:
+<ul>
+<li>selects the current networking device</li>
+<li>starts the tt executable</li>
+<li>monitors changes in the connection&rsquo;s status</li>
+</ul>
+</li>
+<li>A service unit file called traffic-cop.service that configures systemd to manage the process.</li>
+</ul>
+<p><em>This app uses an icon based on the &ldquo;traffic-police&rdquo; icon created by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> and found at <a href="https://www.flaticon.com/">https://www.flaticon.com/</a>.</em></p>
+</article>
+
+      
+      <h3 class="wasta-footer"><b>Questions or comments?</b></h3>
+<p  class="wasta-footer"><i>Leave any questions or comments on one of the Wasta-Linux User Forums should you need any help:</i>
+<ul class="wasta-footer">
+  <li><a href="https://groups.google.com/forum/#!forum/wasta-linux-users" target="_blank">Wasta-Linux Users Forum (English)</a></li>
+  <li><a href="https://groups.google.com/forum/#!forum/utilisateurs-wasta-linux" target="_blank">Groupe d'utilisateurs de Wasta-Linux (francais)</a></li>
+</ul>
+
+    </div>
+
+    
+  
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+
+<!-- Mirrored from www.wastalinux.org/wasta-apps/traffic-cop/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:34:44 GMT -->
+</html>

@@ -4,11 +4,7 @@
     <title>Wasta-Linux - Home on wasta [Linux]</title>
     <link>http://www.wastalinux.org/</link>
     <description>Recent content in Wasta-Linux - Home on wasta [Linux]</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="http://www.wastalinux.org/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://www.wastalinux.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cinnamon-Layout</title>
       <link>http://www.wastalinux.org/wasta-apps/cinnamon-layout/</link>
@@ -36,7 +32,7 @@ To use Rufus, first insert a 4GB (or greater) USB drive (WARNING! using the Rufu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.wastalinux.org/home/customizing/</guid>
-      <description>Wasta-Linux: Customizing for your Needs [Wasta-Linux] (/&amp;rdquo; &amp;gt;}}) is intended to be used as a base for regionally-localized Linux &amp;ldquo;customized&amp;rdquo; distributions specific to locations&amp;rsquo; needs (fonts, keyboards, applications, settings, included reference documents, etc.). Should you be interested in being a &amp;ldquo;regional customizer&amp;rdquo; of Wasta-Linux, please use the forums linked at the bottom of this page and someone will contact you.
+      <description>Wasta-Linux: Customizing for your Needs [Wasta-Linux] (/&amp;quot; &amp;gt;}}) is intended to be used as a base for regionally-localized Linux &amp;ldquo;customized&amp;rdquo; distributions specific to locations&amp;rsquo; needs (fonts, keyboards, applications, settings, included reference documents, etc.). Should you be interested in being a &amp;ldquo;regional customizer&amp;rdquo; of Wasta-Linux, please use the forums linked at the bottom of this page and someone will contact you.
 There are 2 primary Wasta-Linux customizing methods, both of which can be used to create custom Wasta-Linux ISOs to re-distribute to users:</description>
     </item>
     
@@ -47,8 +43,8 @@ There are 2 primary Wasta-Linux customizing methods, both of which can be used t
       
       <guid>http://www.wastalinux.org/home/download/</guid>
       <description>Wasta-Linux: Downloads If you are unsure of which download may be best for your hardware, please use the links at the bottom of this page to post to one of the Wasta-Linux User Forums to ask for clarification.
-18.04  Wasta-Linux-18.04.4-64Bit  updated: 2020-04-14 md5: 1f3913eead2cb36cad777fe41657cd04  Notes:
- Based on Ubuntu 18.04.4 &amp;ldquo;Bionic&amp;rdquo; Interface: Cinnamon is the default interface, with Gnome-Shell also installed Long-Term Support: Security updates provided by Ubuntu through April 2023 UEFI Compatible: Fully compatible with newer UEFI and Secure Boot features used by Windows 8+ computers Linux Kernel: 5.</description>
+20.04  Wasta-Linux-20.04.2-64Bit  updated: 2021-03-12 md5: cd8f4d419eb9fc86c6d7b6bdc32bd3ca  Notes:
+ Based on Ubuntu 20.04.2 &amp;ldquo;Focal Fossa&amp;rdquo; Interface: Cinnamon is the default interface, with Gnome-Shell also installed Long-Term Support: Security updates provided by Ubuntu through April 2025 UEFI Compatible: Fully compatible with newer UEFI and Secure Boot features used by Windows 8+ computers Linux Kernel: 5.</description>
     </item>
     
     <item>
@@ -92,6 +88,33 @@ Follow the below steps in order establish your GitHub ID and register a SSH key 
       <guid>http://www.wastalinux.org/tutorials/inplace-upgrade/</guid>
       <description>Inplace Upgrades: Migrating between major versions of Wasta-Linux This guide is for migrating between major versions of Wasta-Linux (eg. from 16.04 to 18.04) when the machine does not have a separate home partition. Even without a separate home partition, this type of upgrade will not remove a user&amp;rsquo;s home directory and all files and settings from this &amp;lsquo;home&amp;rsquo; will be migrated to the new system.
  Backup Make sure important personal files are backed up in case something goes awry.</description>
+    </item>
+    
+    <item>
+      <title>Intro to Files app</title>
+      <link>http://www.wastalinux.org/intros/files-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.wastalinux.org/intros/files-app/</guid>
+      <description>Introduction to Files app Browse and manage computer files and folders         Your browser does not support the video element.      Other Features  Special actions for certain file types in the right-click menu. Connect to network drives.  </description>
+    </item>
+    
+    <item>
+      <title>Intro to Software Manager</title>
+      <link>http://www.wastalinux.org/intros/software-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.wastalinux.org/intros/software-manager/</guid>
+      <description>Introduction to Software Manager App installation         Your browser does not support the video element.      App Removal         Your browser does not support the video element.      </description>
+    </item>
+    
+    <item>
+      <title>Intro to System Monitor</title>
+      <link>http://www.wastalinux.org/intros/system-monitor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.wastalinux.org/intros/system-monitor/</guid>
+      <description>Introduction to System Monitor Basic Usage  See running processes. See live memory, CPU, and network usage. See file system status.          Your browser does not support the video element.      Other Features  Stop a misbehaving process. Filter output using the search field. Change visible columns.  </description>
     </item>
     
     <item>
@@ -163,6 +186,15 @@ Git is used for version control of all the Wasta-Linux custom packages. There is
     </item>
     
     <item>
+      <title>Traffic Cop</title>
+      <link>http://www.wastalinux.org/wasta-apps/traffic-cop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.wastalinux.org/wasta-apps/traffic-cop/</guid>
+      <description>Traffic Cop: Manage bandwidth usage by app or process Features  Set priority, upload bandwidth, and/or download bandwidth for the whole system or for any process. See current config (displayed in &amp;ldquo;B/s&amp;rdquo; regardless of unit used in the config file). See live upload and download rates globally and for each managed process. Default config provided that covers common use cases.  Limitations Traffic Cop relies on nethogs to track network usage.</description>
+    </item>
+    
+    <item>
       <title>Tutorial Guidelines</title>
       <link>http://www.wastalinux.org/tutorials/tutorial-guidelines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -179,8 +211,8 @@ Git is used for version control of all the Wasta-Linux custom packages. There is
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.wastalinux.org/home/ubuntu-migration/</guid>
-      <description>How to turn Ubuntu into Wasta-Linux To take an existing Ubuntu 18.04 system and change it into Wasta-Linux 18.04, from a Terminal * perform the following steps:
- NOTE: Wasta-Linux only targets Ubuntu LTS (Long Term Support) releases, such as 18.04, 16.04, etc. Interim short-term Ubuntu releases such as 19.10, 19.04, etc. are not supported.    Get the Wasta-Linux core package installed: The following Terminal * commands (perform them one at a time) are needed to install the all-essential wasta-core-bionic package, which is the foundation for Wasta-Linux:</description>
+      <description>How to turn Ubuntu into Wasta-Linux To take an existing Ubuntu 20.04 system and change it into Wasta-Linux 20.04, from a Terminal * perform the following steps:
+ NOTE: Wasta-Linux only targets Ubuntu LTS (Long Term Support) releases, such as 20.04, 18.04, etc. Interim short-term Ubuntu releases such as 20.10, 19.04, etc. are not supported.    Get the Wasta-Linux core package installed: The following Terminal * commands (perform them one at a time) are needed to install the all-essential wasta-core-focal package, which is the foundation for Wasta-Linux:</description>
     </item>
     
     <item>
@@ -198,7 +230,7 @@ Git is used for version control of all the Wasta-Linux custom packages. There is
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.wastalinux.org/wasta-apps/wasta-backup/</guid>
-      <description>Wasta-Backup: Simple Version-Backup Program What is it? Wasta-Backup is a simple Linux backup program for version-backups of data to an external USB device. In other words, it is an easy way to back up important files, and it keeps older versions of the files in case they are needed again.
+      <description>Wasta-Backup: Simple Version-Backups What is it? Wasta-Backup is a simple Linux backup program for version-backups of data to an external USB device. In other words, it is an easy way to back up important files, and it keeps older versions of the files in case they are needed again.
 If you want to know more, Wasta-Backup is a simple graphical interface for rdiff-backup, which is a solid, reputable, and reliable command-line-only backup program.</description>
     </item>
     

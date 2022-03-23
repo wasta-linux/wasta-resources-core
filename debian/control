@@ -10,3 +10,6 @@ Architecture: all
 Depends: wasta-resources, ${shlibs:Depends}, ${misc:Depends}
 Description: Wasta-Linux Core Resources
  Wasta-Linux core documentation and reference materials.
+ .
+ httrack used to pull wastalinux.org website:
+ httrack https://www.wastalinux.org/ -*/downloads/* -O ./.wasta-linux-doc/

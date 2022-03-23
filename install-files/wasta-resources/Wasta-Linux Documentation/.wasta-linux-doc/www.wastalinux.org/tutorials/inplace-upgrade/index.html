@@ -2,17 +2,17 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.wastalinux.org/tutorials/inplace-upgrade/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:15:16 GMT -->
+<!-- Mirrored from www.wastalinux.org/tutorials/inplace-upgrade/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:35:15 GMT -->
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Inplace Upgrade | wasta [Linux]</title>
 
 
-<link rel="stylesheet" href="../../book.min.12687d6b2f9c17ec42179e86623848c3091e7f3962c936ff8555e2e41a1a9815.css">
+<link rel="stylesheet" href="../../book.min.2e6ad64739c973e2832d84e6d099cddfdb3102d354c3f03b4b685b858d822167.css">
 
 
-<script defer src="../../search.min.c5db3cb65423fb36985e4f6524996c886fbb096d98fdf834ba0d56cf06e6e252.js"></script>
+<script defer src="../../search.min.469a40d1bdb09755ec2ad4f1200d0bcb34bdf153e26e05ad179441ad0e26f719.js"></script>
 
 
 
@@ -72,11 +72,12 @@ wasta [Linux]
 <li><a href="../../wasta-apps/index.html"><strong>Wasta Apps</strong></a>
 <ul>
 <li><a href="../../wasta-apps/wasta-backup/index.html">Wasta-Backup</a></li>
-<li><a href="../../wasta-apps/wasta-offline/index.html">Wasta-Offline</a></li>
-<li><a href="../../wasta-apps/cinnamon-layout/index.html">Cinnamon-Layout</a></li>
-<li><a href="../../wasta-apps/wasta-snap-manager/index.html">Wasta-Snap-Manager</a></li>
-<li><a href="../../wasta-apps/wasta-menus/index.html">Wasta-Menus</a></li>
+<li><a href="../../wasta-apps/traffic-cop/index.html">Traffic-Cop</a></li>
 <li><a href="../../wasta-apps/wasta-resources/index.html">Wasta-Resources</a></li>
+<li><a href="../../wasta-apps/cinnamon-layout/index.html">Cinnamon-Layout</a></li>
+<li><a href="../../wasta-apps/wasta-menus/index.html">Wasta-Menus</a></li>
+<li><a href="../../wasta-apps/wasta-offline/index.html">Wasta-Offline</a></li>
+<li><a href="../../wasta-apps/wasta-snap-manager/index.html">Wasta-Snap-Manager</a></li>
 </ul>
 </li>
 <li><a href="../index.html"><strong>Tutorials</strong></a></li>
@@ -134,9 +135,9 @@ wasta [Linux]
 <ul>
 <li><em><strong>Terminal * command:</strong></em></li>
 </ul>
-<pre><code>sudo grep &quot;/home&quot; /etc/passwd
+<pre tabindex="0"><code>sudo grep &#34;/home&#34; /etc/passwd
 </code></pre><p>You will get output something like this:</p>
-<pre><code>syslog:x:104:109::/home/syslog:/bin/false
+<pre tabindex="0"><code>syslog:x:104:109::/home/syslog:/bin/false
 rik:x:1000:1000:rik,,,:/home/rik:/bin/bash
 etbadmin:x:1001:1001:etbadmin,,,:/home/etbadmin:/bin/bash
 test:x:1002:1002:test,,,:/home/test:/bin/bash
@@ -155,12 +156,12 @@ test:x:1002:1002:test,,,:/home/test:/bin/bash
 </li>
 <li>
 <h2 id="set-partition-properties">Set Partition Properties</h2>
-<p>Then choose &ldquo;ext4&rdquo; for the type, and choose &ldquo;/&quot;. Make sure an NOT SELECT to format it (or you will wipe the data). It will warn you that it will NOT replace data in &ldquo;non system folders&rdquo;&hellip;. basically this is telling us your home won&rsquo;t be wiped out so this is very important.</p>
+<p>Then choose &ldquo;ext4&rdquo; for the type, and choose &ldquo;/&rdquo;. Make sure an NOT SELECT to format it (or you will wipe the data). It will warn you that it will NOT replace data in &ldquo;non system folders&rdquo;&hellip;. basically this is telling us your home won&rsquo;t be wiped out so this is very important.</p>
 <p><img src="../../media/tutorials/inplace-upgrade/InPlace-3.png" alt="Partition Properties"></p>
 </li>
 <li>
 <h2 id="continue-without-formatting-partition">Continue WITHOUT Formatting Partition</h2>
-<p>Click &ldquo;OK&rdquo; and you will get back to the &ldquo;Something Else&rdquo; list where you will see your partition is now listed as &ldquo;/&quot;. Again make sure to <em><strong>NOT CHECK THE BOX</strong></em> next to format. Finally you can click <em><strong>Install Now</strong></em>.</p>
+<p>Click &ldquo;OK&rdquo; and you will get back to the &ldquo;Something Else&rdquo; list where you will see your partition is now listed as &ldquo;/&rdquo;. Again make sure to <em><strong>NOT CHECK THE BOX</strong></em> next to format. Finally you can click <em><strong>Install Now</strong></em>.</p>
 <p>You will get the following messages just informing you that it will ONLY delete data from the &lsquo;system folders&rsquo; (meaning your <em><strong>HOME</strong></em> will not be deleted). The second message just indicates that the &ldquo;swap&rdquo; (for &ldquo;virtual RAM&rdquo;) partition will be formatted. Click &ldquo;Continue&rdquo; to both messages.</p>
 <p><img src="../../media/tutorials/inplace-upgrade/InPlace-4.png" alt="Only Delete Data from System Folders"></p>
 <p><img src="../../media/tutorials/inplace-upgrade/InPlace-5.png" alt="Swap Formatting"></p>
@@ -220,5 +221,5 @@ test:x:1002:1002:test,,,:/home/test:/bin/bash
 </body>
 
 
-<!-- Mirrored from www.wastalinux.org/tutorials/inplace-upgrade/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Sep 2020 09:15:16 GMT -->
+<!-- Mirrored from www.wastalinux.org/tutorials/inplace-upgrade/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Mar 2022 15:35:15 GMT -->
 </html>
